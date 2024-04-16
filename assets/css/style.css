@@ -508,6 +508,7 @@ h6 {
   font-weight: 500;
   font-family: "VL-AmpleSoft", sans-serif !important;
 }
+
 .item-content-3-collapse {
   align-items: center;
   margin-top: 24px;
@@ -642,7 +643,7 @@ h6 {
 .item-content-5 h2 {
   font-size: 48px;
   color: var(--Icon-Text-Dark, #252525);
-  font-family: "VL-AmpleSoft";
+  font-family: "VL-AmpleSoft", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -652,7 +653,7 @@ h6 {
 .i5-circle h2 {
   font-size: 38px;
   color: var(--Icon-Text-Dark, #252525);
-  font-family: "VL-AmpleSoft";
+  font-family: "VL-AmpleSoft", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -666,6 +667,102 @@ h6 {
   height: 500px;
   width: 100%;
 }
+
+.item-content-6 {
+  display: grid;
+  justify-content: center;
+}
+.item-content-6 h2 {
+  margin-bottom: 40px;
+  color: var(--Icon-Text-Primary);
+  text-align: center;
+  font-family: "VL-AmpleSoft", sans-serif !important;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.i6-cus-said {
+  width: 30%;
+  margin: 12px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.i6-cus {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: 300px;
+  margin: 24px 0;
+}
+.i6-cus img {
+  border-radius: 25%;
+  margin-right: 16px;
+}
+.item-content-6 h5 {
+  margin: 0;
+  padding: 0;
+  height: 180px;
+}
+
+.i6-cus h6 {
+  margin: 0;
+  padding: 0;
+}
+.i6-cus h3 {
+  margin: 0;
+  padding: 0;
+  color: var(--Icon-Text-Primary);
+  font-family: "VL-AmpleSoft", sans-serif !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.item-content-7-collapse {
+  margin-top: 40px;
+  display: grid;
+  width: 100%;
+  border-top: 1px solid #d1d1d1;
+  padding: 12px 16px;
+  gap: 12px;
+  align-self: stretch;
+}
+.item-content-7-collapse .i7-collapse {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  align-self: stretch;
+  color: var(--Icon-Text-Primary);
+}
+
+.item-content-8 {
+  display: grid;
+  justify-content: center;
+}
+.item-content-8 h2 {
+  margin-bottom: 40px;
+  color: var(--Icon-Text-Primary);
+  text-align: center;
+  font-family: "VL-AmpleSoft", sans-serif !important;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.item-content-8 img {
+  width: 100%;
+}
+
+
 .play-image-video {
 }
 /* Define the animation */
