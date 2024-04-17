@@ -289,6 +289,11 @@ li:last-child .dropdown-item {
 .body-content {
   padding: 0.75rem 8%;
 }
+
+.body-content-page-detail {
+  padding: 0.75rem 0;
+}
+
 .body-content .item-content {
   margin-bottom: 160px;
   align-items: center;
@@ -319,7 +324,7 @@ li:last-child .dropdown-item {
   text-align: center;
 }
 
-.content-text h1 {
+h1 {
   color: var(--Icon-Text-Primary);
   font-family: "VL-AmpleSoft", sans-serif !important;
   font-size: 76px;
@@ -580,6 +585,7 @@ h6 {
   gap: 12px;
 }
 .item-content-4 .col {
+  position: relative;
   display: flex;
   padding: 48px 32px;
   flex-direction: column;
@@ -762,6 +768,12 @@ h6 {
   width: 100%;
 }
 
+.like-package {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 16px 0 0;
+}
 
 .play-image-video {
 }
