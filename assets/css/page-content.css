@@ -175,3 +175,82 @@ svg {
     width: 50%;
   }
 }
+@media (max-width: 767px) {
+  .body-top {
+    background-size: contain;
+    height: 360px;
+  }
+  .body-top-2 {
+    background-size: contain;
+    height: 360px;
+  }
+  .body-top-3 {
+    background-size: contain;
+    height: 360px;
+  }
+  .body-top-4 {
+    background-size: contain;
+    height: 360px;
+  }
+
+  .body-top-5 {
+    background-size: contain;
+    height: 360px;
+  }
+  .popup-content-top {
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    width: 90%;
+  }
+  h3 {
+    height: 70px;
+  }
+  .col-6 {
+    padding: 0 8px;
+  }
+  .img-col-6 {
+    padding: 8px;
+  }
+  .item-1 {
+    padding: 24px 8% 80px;
+  }
+}
+@media (min-width: 768px) {
+  .body-top {
+    background-size: cover;
+    height: 500px;
+  }
+  .body-top-2 {
+    background-size: cover;
+    height: 500px;
+  }
+  .body-top-3 {
+    background-size: cover;
+    height: 500px;
+  }
+  .body-top-4 {
+    background-size: cover;
+    height: 500px;
+  }
+
+  .body-top-5 {
+    background-size: cover;
+    height: 500px;
+  }
+  .popup-content-top {
+    width: 500px !important;
+    left: 8%;
+    bottom: -10%;
+    transform: none;
+  }
+  .item-1 {
+    padding: 120px 8% 80px;
+  }
+  h3 {
+    height: 36px;
+  }
+  .col-6 {
+    padding: 0 50px;
+  }
+}

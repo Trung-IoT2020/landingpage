@@ -28,26 +28,50 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link href="https://fpt.vn/assets/frontend/css/font-face.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fpt.vn/assets/frontend/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="./assets/owl.carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" />
 
+
+    <link href="https://fpt.vn/assets/assetv2/css/layout.css?V=1.25.1" rel="stylesheet" type="text/css">
+    <link href="https://fpt.vn/assets/assetv2/css/responsive.css?V=1.25.2" rel="stylesheet" type="text/css">
+    <link href="https://fpt.vn/assets/assetv2/owl.carousel/owl-inet.css?V=1.20.4" rel="stylesheet" type="text/css" />
+    <style>
+        .title-footer-item {
+            line-height: 25px;
+            padding-bottom: 10px;
+        }
+    </style>
+    <script src="https://fpt.vn/assets/frontend/js/jquery-2.2.3.min.js" type="text/javascript"></script>
+    <script src="./assets/owl.carousel/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="https://fpt.vn/assets/assetv2/owl.carousel/owl-inet.js" type="text/javascript"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/url.js"></script>
-
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name" : "Khách hàng cá nhân",
+          "alternateName" : "Website chính thức cung cấp đầy đủ, chính xác thông tin về Internet FPT, Truyền hình FPT, FPT Play, FPT Play Box, FPT Camera, Foxpay, Fshare, Hi FPT - Trang chủ",
+          "url" : ""
+        }
+        </script>
 </head>
 
 <body>
     <header>
         <div class="header-title">
             <div class="logo-header">
-                <a>
+                <a href="https://fpt.vn/vi">
                     <img src="./assets/image/header/logo-fpt.svg" alt="logo-fpt" width="auto" height="64">
                 </a>
                 <img src="./assets/image/header/logo-center.svg" alt="logo-center" style="padding: 0 16px;">
-                <a>
+                <a href="/">
                     <img src="./assets/image/header/logo-fsafe-go.svg" alt="logo-fsafe-go" width="auto" height="64">
                 </a>
             </div>
@@ -56,7 +80,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Trang chủ</a>
+                                <a class="nav-link" aria-current="page" href="/">Trang chủ</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -64,15 +88,18 @@
                                     Tính năng nổi bật
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Bảo vệ truy cập trên Browser</a></li>
-                                    <li><a class="dropdown-item" href="#">Ngăn nguy cơ lộ dữ liệu cá nhân</a></li>
-                                    <li><a class="dropdown-item" href="#">Chống theo dõi với VPN</a></li>
-                                    <li><a class="dropdown-item" href="#">Bảo vệ thiết bị</a></li>
-                                    <li><a class="dropdown-item" href="#">Bảo vệ trẻ nhỏ</a></li>
+                                    <li><a class="dropdown-item" href="/page-detail-1.html">Bảo vệ truy cập trên
+                                            Browser</a></li>
+                                    <li><a class="dropdown-item" href="/page-detail-2.html">Ngăn nguy cơ lộ dữ liệu cá
+                                            nhân</a></li>
+                                    <li><a class="dropdown-item" href="/page-detail-3.html">Chống theo dõi với VPN</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/page-detail-4.html">Bảo vệ thiết bị</a></li>
+                                    <li><a class="dropdown-item" href="/page-detail-5.html">Bảo vệ trẻ nhỏ</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Bảng giá</a>
+                                <a class="nav-link" href="#item-content-4">Bảng giá</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -80,8 +107,8 @@
                                     Hướng dẫn
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Hướng dẫn đăng ký</a></li>
-                                    <li><a class="dropdown-item" href="#">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="#item-content-5">Hướng dẫn đăng ký</a></li>
+                                    <li><a class="dropdown-item" href="#item-content-6">FAQs</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -95,25 +122,33 @@
                 </nav>
             </div>
             <div class="button-header">
-                <button>Đăng ký</button>
+                <button id="scrollButton" target="_blank"
+                    onclick="goto('https://shop.fpt.vn/fsafe-go/register/fsafe-go-5d',1)">Đăng
+                    ký</button>
             </div>
 
 
         </div>
     </header>
-    <div class="body-content">
-        <div class="item-content item-content-1">
+    <div class="body-content" style="margin-top: 80px;">
+        <div class="item-content item-content-1" id="item-content-1">
             <div class="row">
+                <div class="col-6 text-center item-1-mobile">
+
+                    <img src="./assets/image/content/home-content-1.png" alt="home-1" width="auto" height="auto"
+                        class="home-1">
+
+                </div>
                 <div class="col-6">
                     <div class="content-text">
-                        <h1>F-Safe Go</h1>
+                        <h1>F-Safe Go:</h1>
                         <h2>Online <strong>an toàn</strong></h2>
                         <h4>
                             F-Safe Go là ứng dụng bảo mật hợp tác giữa FPT Telecom và Tập đoàn bảo mật F-Scure tại Phần
                             Lan, giúp bảo vệ thiết bị của bạn khỏi Vi-rút, phần mềm độc hại, lừa đảo, ứng dụng theo dõi
                             và các mối đe dọa trực tuyến khác.
                         </h4>
-                        <a href="#">
+                        <a href="#item-content-3">
                             <div class="button-click-lv1">
                                 <img src="./assets/image/content/button-down.png" alt="button-down-top" width="auto"
                                     height="auto" style="height: 32px;">
@@ -122,17 +157,18 @@
                         <div style="height:100px;"></div>
                     </div>
                 </div>
-                <div class="col-6 text-end">
+                <div class="col-6 text-end item-1-pc">
 
-                    <img src="./assets/image/content/home-content-1.png" alt="home-1" width="auto" height="auto">
+                    <img src="./assets/image/content/home-content-1.png" alt="home-1" width="auto" height="auto"
+                        class="home-1">
 
                 </div>
             </div>
 
         </div>
-        <div class="item-content item-content-2">
+        <div class="item-content item-content-2" id="item-content-2">
             <div class="row">
-                <div class="col-12" style="padding: 0 15%;">
+                <div class="col-12">
                     <div class="content-text">
                         <h2 style="font-size: 48px;">Không còn lo lắng khi lướt Internet</h2>
                         <h5>
@@ -144,8 +180,8 @@
 
             </div>
             <div class="row">
-                <div class="col-6 text-start" style="max-height: 630px;">
-                    <div class="item-content-2-left l-1">
+                <div class="col-6 text-start" style="max-height: 630px; margin-top: 16px;">
+                    <a class="item-content-2-left l-1" onclick="goto('/page-detail-1.html')">
                         <div class="l-1-text">
                             <div>
                                 <h2>Bảo vệ truy cập</h2>
@@ -159,8 +195,8 @@
                         </div>
                         <img src="./assets/image/content/image-l2-1.png" alt="image-l2-1" width="auto" height="auto"
                             style="top: 0;">
-                    </div>
-                    <div class="item-content-2-left l-2"
+                    </a>
+                    <a class="item-content-2-left l-2" onclick="goto('/page-detail-2.html')"
                         style="background: linear-gradient(0deg, #f5f5f5 0%, #ececec 100%);">
                         <div class="l-2-text">
                             <div>
@@ -176,10 +212,10 @@
                         <img src="./assets/image/content/image-l2-2.png" alt="image-l2-2" width="auto" height="auto"
                             style="bottom: 0;border-radius: 16px;">
 
-                    </div>
+                    </a>
                 </div>
-                <div class="col-6 text-end" style="max-height: 630px;">
-                    <div class="item-content-2-right r-1">
+                <div class="col-6 text-end" style="max-height: 630px; margin-top: 16px;">
+                    <a class="item-content-2-right r-1" onclick="goto('/page-detail-3.html')">
                         <div class="r-text">
                             <div>
                                 <h2>Bảo vệ</h2>
@@ -194,8 +230,8 @@
                         <img src="./assets/image/content/image-l2-3.png" alt="image-l2-3" width="auto" height="auto"
                             style="bottom: 0;border-radius: 16px;">
 
-                    </div>
-                    <div class="item-content-2-right r-1">
+                    </a>
+                    <a class="item-content-2-right r-1" onclick="goto('/page-detail-4.html')">
                         <div class="r-text">
                             <div>
                                 <h2>Bảo vệ trẻ nhỏ</h2>
@@ -209,8 +245,8 @@
                         <img src="./assets/image/content/image-l2-4.png" alt="image-l2-4" width="auto" height="auto"
                             style="bottom: 0;border-radius: 16px;">
 
-                    </div>
-                    <div class="item-content-2-right r-1">
+                    </a>
+                    <a class="item-content-2-right r-1" onclick="goto('/page-detail-5.html')">
                         <div class="r-text">
                             <div>
                                 <h2>Chống theo dõi</h2>
@@ -225,14 +261,16 @@
                         <img src="./assets/image/content/image-l2-5.png" alt="image-l2-5" width="auto" height="auto"
                             style="bottom: 0;border-radius: 16px;">
 
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
+        <div style="height:80px;" id="item-content-3"></div>
         <div class="item-content item-content-3">
             <div class="row" style="align-items: start;">
                 <div class="col-6 text-start">
-                    <img src="./assets/image/content/image-item-content-3.png" alt="image-item-content-3">
+                    <img src="./assets/image/content/image-item-content-3.png" alt="image-item-content-3" width="auto"
+                        class="image-item-content-3" height="auto">
                 </div>
                 <div class="col-6 text-start">
                     <h2>Một ứng dụng <span style="color: var(--Brand-Blue-Primary);">duy nhất</span></h2>
@@ -250,12 +288,12 @@
                                 <h3>Đảm bảo an toàn</h3>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                class="bi bi-chevron-down" viewBox="0 0 16 16" id="collapseExample1-icon">
+                                class="bi bi-chevron-down abc" viewBox="0 0 16 16" id="collapseExample1-icon">
                                 <path fill-rule="evenodd"
                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                             </svg>
                         </a>
-                        <div class="collapse show" id="collapseExample1">
+                        <div class="collapse collapse-t  show" id="collapseExample1">
                             <h5>Với nhóm tính năng đảm bảo an toàn, thiết bị của bạn sẽ được bảo vệ khỏi virus, mã độc;
                                 đặc biệt, bạn có thể giúp con trẻ tránh xa các nội dung độc hại hay sử dụng Internet
                                 nhiều quá mức.</h5>
@@ -301,7 +339,7 @@
                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                             </svg>
                         </a>
-                        <div class="collapse" id="collapseExample2">
+                        <div class="collapse collapse-t " id="collapseExample2">
                             <h5>Với nhóm tính năng bảo vệ sự riêng tư, các kết nối của bạn sẽ được mã hóa, ngăn chặn
                                 theo dõi và đánh cắp thông tin; đảm bảo lướt web an toàn khi sử dụng các mạng Wi-Fi công
                                 cộng.
@@ -348,7 +386,7 @@
                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                             </svg>
                         </a>
-                        <div class="collapse" id="collapseExample3">
+                        <div class="collapse collapse-t " id="collapseExample3">
                             <h5>Với nhóm tính năng đảm bảo an toàn, thiết bị của bạn sẽ được bảo vệ khỏi virus, mã độc;
                                 đặc biệt, bạn có thể giúp con trẻ tránh xa các nội dung độc hại hay sử dụng Internet
                                 nhiều quá mức.</h5>
@@ -375,9 +413,11 @@
                 </div>
             </div>
         </div>
+        <div style="height:80px;" id="item-content-4"></div>
         <div class="item-content item-content-4">
-            <h2 style="font-size: 48px;">Bảng giá</h2>
-            <h5>Sở hữu ngay một ứng dụng duy nhất để bảo vệ cùng lúc tới 25 thiết bị và mọi hoạt động của bạn
+            <h2 style="font-size: 48px;text-align: center;">Bảng giá</h2>
+            <h5 style="text-align: center;">Sở hữu ngay một ứng dụng duy nhất để bảo vệ cùng lúc tới 25 thiết bị và mọi
+                hoạt động của bạn
                 trên Internet.</h5>
             <div class="content-payment-4">
                 <div class="i-content-payment-4">
@@ -393,28 +433,41 @@
                     Thanh toán bảo mật
                 </div>
             </div>
-            <div class="row" style="align-items: center; ">
-                <div class="col">
-                    <h2>F-SAFE GO - 3</h2>
-                    <h6>Tài khoản đăng ký và bảo vệ được <br>3 thiết bị</h6>
-                    <div class="col-text-price"><strong>35.000</strong><span>vnđ/tháng</span></div>
-                    <button>Mua gói</button>
+            <div class="container-row">
+                <div class="item-4-price">
+                    <div>
+                        <h2>F-SAFE GO - 3</h2>
+                        <h6>Tài khoản đăng ký và bảo vệ được <br>3 thiết bị</h6>
+                        <div class="col-text-price"><strong>35.000</strong><span>vnđ/tháng</span></div>
+                        <button onclick="goto('https://shop.fpt.vn/fsafe-go/register/fsafe-go-3d',2)"
+                            target="_blank">Mua
+                            gói</button>
+                    </div>
                 </div>
-                <div class="col" style="border: 3px solid  #ff730a;">
-                    <h2>F-SAFE GO - 5</h2>
-                    <h6>Tài khoản đăng ký và bảo vệ được <br>5 thiết bị</h6>
-                    <div class="col-text-price"><strong>40.000</strong><span>vnđ/tháng</span></div>
-                    <button>Mua gói</button>
-                    <img src="./assets/image/content/like-package.png" alt="like-package" class="like-package">
+                <div class="item-4-price" style="border: 3px solid  #ff730a;">
+                    <div>
+                        <h2>F-SAFE GO - 5</h2>
+                        <h6>Tài khoản đăng ký và bảo vệ được <br>5 thiết bị</h6>
+                        <div class="col-text-price"><strong>40.000</strong><span>vnđ/tháng</span></div>
+                        <button onclick="goto('https://shop.fpt.vn/fsafe-go/register/fsafe-go-5d',2)"
+                            target="_blank">Mua
+                            gói</button>
+                        <img src="./assets/image/content/like-package.png" alt="like-package" class="like-package">
+                    </div>
                 </div>
-                <div class="col">
-                    <h2>F-SAFE GO - 15</h2>
-                    <h6>Tài khoản đăng ký và bảo vệ được <br>15 thiết bị</h6>
-                    <div class="col-text-price"><strong>50.000</strong><span>vnđ/tháng</span></div>
-                    <button>Mua gói</button>
+                <div class="item-4-price">
+                    <div>
+                        <h2>F-SAFE GO - 15</h2>
+                        <h6>Tài khoản đăng ký và bảo vệ được <br>15 thiết bị</h6>
+                        <div class="col-text-price"><strong>50.000</strong><span>vnđ/tháng</span></div>
+                        <button onclick="goto('https://shop.fpt.vn/fsafe-go/register/fsafe-go-15d',2)"
+                            target="_blank">Mua
+                            gói</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div style="height:80px;" id="item-content-5"></div>
         <div class="item-content item-content-5">
             <div class="row">
                 <div class="col-5">
@@ -483,6 +536,7 @@
                 </div>
             </div>
         </div>
+        <div style="height:80px;" id="item-content-6"></div>
         <div class="item-content item-content-6">
             <h2>Khách hàng nói gì về F-Safe Go</h2>
 
@@ -614,6 +668,7 @@
             </div>
 
         </div>
+        <div style="height:80px;" id="item-content-7"></div>
         <div class="item-content item-content-7">
             <div class="row" style="align-items: start;">
                 <div class="col-6 text-start">
@@ -625,12 +680,15 @@
                             <div style="width: 100%;display: flex; align-items: center;">
                                 <h3>Nền tảng nào được hỗ trợ trên F-Safe Go?</h3>
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                class="bi bi-dash" viewBox="0 0 16 16">
-                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                            </svg>
+                            <div class="icon-bi">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </div>
+
                         </a>
-                        <div class="collapse show" id="collapseExample7-1">
+                        <div class="collapse collapse7 show" id="collapseExample7-1">
                             <h5>F-Safe Go hỗ trợ Windows 8.1, Windows 10, Windows 11, macOS 11 (Big Sur) hoặc mới hơn,
                                 iOS 15 hoặc mới hơn và Android 8.0 hoặc mới hơn. Các máy tính bảng dựa trên ARM không
                                 được hỗ trợ.</h5>
@@ -645,13 +703,15 @@
                                 <h3>Tôi muốn thay đổi gói đăng ký F-Safe Go thì phải làm sao?
                                 </h3>
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
-                            </svg>
+                            <div class="icon-bi">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                                </svg>
+                            </div>
                         </a>
-                        <div class="collapse" id="collapseExample7-2">
+                        <div class="collapse collapse7" id="collapseExample7-2">
                             <h5>Nếu bạn đang sử dụng F-Safe Go và muốn thay đổi đăng ký F-Safe Go hiện có của mình, đăng
                                 nhập vào Hi FPT (bằng số điện thoại quản lý F-Safe Go) và nhấp vào mục F-Safe Go ở màn
                                 hình home. Chọn Quản lý gói F-Safe Go và chọn Thay đổi gói, chọn gói cần thay đổi và
@@ -666,13 +726,15 @@
                             <div style="width: 100%;display: flex; align-items: center;">
                                 <h3>Làm thế nào để tôi gia hạn F-Safe Go?</h3>
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
-                            </svg>
+                            <div class="icon-bi">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                                </svg>
+                            </div>
                         </a>
-                        <div class="collapse" id="collapseExample7-3">
+                        <div class="collapse collapse7" id="collapseExample7-3">
                             <h5>Gia hạn gói F-Safe Go tại đây. Hoặc gia hạn trực tiếp trên ứng dụng F-Safe Go (Chọn
                                 profile, sau đó chọn Giới thiệu và trợ giúp, chọn Gia hạn). Đăng ký của bạn được gia hạn
                                 dựa trên đăng ký ban đầu của bạn (thời hạn cấp phép và số lượng thiết bị)</h5>
@@ -686,13 +748,15 @@
                             <div style="width: 100%;display: flex; align-items: center;">
                                 <h3>Làm sao sử dụng được F-Safe Go?</h3>
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
-                            </svg>
+                            <div class="icon-bi">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                                </svg>
+                            </div>
                         </a>
-                        <div class="collapse" id="collapseExample7-4">
+                        <div class="collapse collapse7" id="collapseExample7-4">
                             <h5>Sau khi thực hiện mua gói thành công, khách hàng sẽ nhận được thông tin tài khoản qua
                                 SMS số điện thoại đăng ký, khách hàng thực hiện tải app F-Safe Go và đăng nhập với tài
                                 khoản đã được cung cấp.</h5>
@@ -702,25 +766,483 @@
                 </div>
                 <div class="col-6 text-center">
                     <a>
-                        <img id="i7" src="./assets/image/content/i7.png" alt="i7" width="auto" height="auto">
+                        <img id="i7" src="./assets/image/content/i7.png" alt="image-item-content-7" width="auto"
+                            height="auto" class="image-item-content-7">
 
                     </a>
                 </div>
             </div>
 
         </div>
+        <div style="height: 80px;" id="item-content-8"></div>
         <div class="item-content item-content-8">
             <h2>Cập nhật tin mới nhất</h2>
-            <a style="display: flex; width: 100%;justify-content: center;">
+            <a style=" width: 100%;justify-content: center;" class="item-8-pc"
+                onclick="goto('https://shop.fpt.vn/tin-tuc/f-safe-go-giai-phap-bao-mat-du-lieu-toan-dien-cho-hanh-trinh-truc-tuyen-cua-ban-181',2)">
                 <img id="i8" src="./assets/image/content/i8.png" alt="i8" width="auto" height="auto">
             </a>
+            <div class="item-8-mobile">
+                <a
+                    onclick="goto('https://shop.fpt.vn/tin-tuc/danh-gia-hieu-qua-cua-phan-mem-f-safe-go-co-tot-khong-182',2)"><img
+                        src="./assets/image/content/info-fsafe-1.png" alt="info-fsafe-1" width="auto" height="auto"
+                        style="width: 100%;    margin: 8px 0;"></a>
+                <a
+                    onclick="goto('https://shop.fpt.vn/tin-tuc/phan-mem-bao-mat-f-safe-go-co-phien-ban-tieng-viet-184',2)"><img
+                        src="./assets/image/content/info-fsafe-2.png" alt="info-fsafe-2" width="auto" height="auto"
+                        style="width: 100%;    margin: 8px 0;"></a>
+                <a
+                    onclick="goto('https://shop.fpt.vn/tin-tuc/f-safe-go-da-dang-su-chon-lua-ve-goi-dich-vu-va-chi-phi-183',2)"><img
+                        src="./assets/image/content/info-fsafe-3.png" alt="info-fsafe-3" width="auto" height="auto"
+                        style="width: 100%;    margin: 8px 0;"></a>
+                <a onclick="goto('https://shop.fpt.vn/tin-tuc/huong-dan-cach-cai-dat-phan-mem-f-safe-go-185',2)"><img
+                        src=" ./assets/image/content/info-fsafe-4.png" alt="info-fsafe-4" width="auto" height="auto"
+                        style="width: 100%;    margin: 8px 0;"></a>
+            </div>
         </div>
     </div>
-
-    <div style="height: 160px;"></div>
-
     </div>
+    <footer class="footer">
+        <div class="container link-footer-desktop">
+            <div class="row row-fptlogo">
+                <div class="col-sm-6">
+                    <span>
+                        <a class="logo-fpt-footer" title="FPT Telecom" href="https://fpt.vn">
+                            <img class="" src="https://fpt.vn/assets/frontend/img/footer_logo.svg" alt="FPT Telecom" />
+                        </a>
+                    </span>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="foot-social">
+                        <li>
+                            <a href="https://fpt.vn/hifpt.php" style="margin: 0" target="_blank">
+                                <img class="icon"
+                                    src="https://fpt.vn/storage/upload/images/menus/social-network/foot-hifpt.png"
+                                    alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/likefpt" style="margin: 0" target="_blank">
+                                <img class="icon"
+                                    src="https://fpt.vn/storage/upload/images/menus/social-network/foot-youtube.png"
+                                    alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/fpt.telecom/" style="margin: 0" target="_blank">
+                                <img class="icon"
+                                    src="https://fpt.vn/storage/upload/images/menus/social-network/foot-instagram.png"
+                                    alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://zalo.me/fpttelecom" style="margin: 0" target="_blank">
+                                <img class="icon"
+                                    src="https://fpt.vn/storage/upload/images/menus/social-network/foot-zalo.png"
+                                    alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/FptTelecom/" style="margin: 0" target="_blank">
+                                <img class="icon"
+                                    src="https://fpt.vn/storage/upload/images/menus/social-network/foot-facebook.png"
+                                    alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row row-link-foot">
+                <div class="col-sm-4">
+                    <p>Giấy chứng nhận ĐKKD số 0101778163 do Sở Kế hoạch Đầu tư Thành phố Hà Nội cấp ngày 28/07/2005</p>
+                    <p>Giấy phép cung cấp dịch vụ viễn thông số 255/GP-CVT do Cục Viễn Thông cấp ngày 07/11/2022</p>
+                    <p> Công ty Cổ phần Viễn thông FPT <br /> Địa chỉ liên lạc: Tầng 9, Block A, tòa nhà FPT Cầu Giấy,
+                        số 10 Phạm
+                        Văn Bạch, quận Cầu Giấy, TP. Hà Nội <br /> Thư điện tử: <a href="mailto:hotrokhachhang@fpt.com"
+                            class="foot-hotline" style="font-weight: 500;">hotrokhachhang@fpt.com</a>
+                        <br /> Số điện thoại liên hệ: <a href="tel:02473002222" class="foot-hotline"
+                            style="font-weight: 500;">024
+                            7300 2222</a>
+                        <br /> Tên người đại diện: Ông Hoàng Việt Anh
+                    </p>
+                    <!-- <p>Hotline: <a href="tel:19006600" class="foot-hotline">1900 6600</a></p> -->
+                    <p style="margin-bottom: 0">
+                        <a href="http://online.gov.vn/Home/WebDetails/35561" target="_blank">
+                            <img alt="FPT Telecom"
+                                src="https://fpt.vn/storage/upload/images/blocks/20150827110756-dathongbao.png"
+                                style="height: 52px;" />
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-8">
+                    <div class="col-sm-4">
+                        <h4 class="title-footer-item">Về FPT Telecom</h4>
+                        <ul class="link-footer">
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/ve-fpt-telecom/gioi-thieu-chung.html"
+                                        title="Giới thiệu chung">Giới thiệu
+                                        chung</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/ve-fpt-telecom/lien-ket-thanh-vien.html"
+                                        title="Li&ecirc;n kết - Th&agrave;nh vi&ecirc;n">Li&ecirc;n kết - Th&agrave;nh
+                                        vi&ecirc;n</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/ve-fpt-telecom/khach-hang-doi-tac"
+                                        title="Kh&aacute;ch h&agrave;ng - Đối t&aacute;c">Kh&aacute;ch h&agrave;ng - Đối
+                                        t&aacute;c</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/ve-fpt-telecom/quan-he-co-dong"
+                                        title="Quan hệ cổ đ&ocirc;ng">Quan hệ cổ
+                                        đ&ocirc;ng</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/ve-fpt-telecom/tap-doan-fpt.html"
+                                        title="Tập đo&agrave;n FPT">Tập
+                                        đo&agrave;n FPT</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4 class="title-footer-item">Kh&aacute;ch h&agrave;ng FPT Telecom</h4>
+                        <ul class="link-footer">
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/ho-tro/ho-tro-thong-tin/huong-dan-su-dung"
+                                        title="Hướng dẫn sử dụng dịch vụ">Hướng dẫn sử dụng dịch vụ</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://gioithieubanbe.fpt.vn/" target=&quot;_blank&quot;
+                                        title="Giới thiệu bạn b&egrave;">Giới thiệu bạn b&egrave;</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/pay" title="Thanh to&aacute;n Online">Thanh to&aacute;n
+                                        Online</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/ho-tro/phan-hoi-khach-hang/gop-y.html"
+                                        title="Góp ý khách hàng">Góp ý khách hàng</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/san-pham-dich-vu/truyen-hinh-fpt/lich-phat-song.html"
+                                        title="Lịch ph&aacute;t s&oacute;ng">Lịch ph&aacute;t s&oacute;ng</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4 class="title-footer-item">Chưa l&agrave; kh&aacute;ch h&agrave;ng của FPT Telecom</h4>
+                        <ul class="link-footer">
+                            <li>
+                                <h4>
+                                    <a href="https://shop.fpt.vn" target=&quot;_blank&quot;
+                                        title="Đăng k&yacute; Online">Đăng k&yacute;
+                                        Online</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/san-pham-dich-vu/internet-fpt/cap-quang-ca-nhan.html"
+                                        title="Sản phẩm dịch vụ">Sản phẩm dịch vụ</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/khuyen-mai" title="Khuyến mại">Khuyến
+                                        mại</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/ho-tro/lien-he-24-7/diem-giao-dich"
+                                        title="T&igrave;m điểm giao dịch">T&igrave;m điểm giao dịch</a>
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/tin-tuc" title="Tin tức">Tin tức</a>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="owl-carousel slide-logo" id="logo-foot-slide">
+                <div class="_item_logo">
+                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/san-pham-dich-vu/internet-fpt/cap-quang-ca-nhan.html"
+                        title="FPT Internet" target="_blank">
+                        <img src="https://fpt.vn/storage/upload/images/banners/logos/internet.png" alt="FPT Internet" />
+                    </a>
+                </div>
+                <div class="_item_logo">
+                    <a href="https://fptsmarthome.vn" title="FPT Smart Home" target="_blank">
+                        <img src="https://fpt.vn/storage/upload/images/banners/logos/logo-fpt-smarthome.png"
+                            alt="FPT Smart Home" />
+                    </a>
+                </div>
+                <div class="_item_logo">
+                    <a href="https://fptplay.net" title="FPT Play" target="_blank">
+                        <img src="https://fpt.vn/storage/upload/images/banners/logos/fpt-play.png" alt="FPT Play" />
+                    </a>
+                </div>
+                <div class="_item_logo">
+                    <a href="https://fptcameraiq.vn" title="FPT Camera" target="_blank">
+                        <img src="https://fpt.vn/storage/upload/images/banners/logos/camera.png" alt="FPT Camera" />
+                    </a>
+                </div>
+                <div class="_item_logo">
+                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/san-pham-dich-vu/dich-vu-online/foxpay-1.html"
+                        title="Foxpay" target="_blank">
+                        <img src="https://fpt.vn/storage/upload/images/banners/logos/foxpay-logo.png" alt="Foxpay" />
+                    </a>
+                </div>
+                <div class="_item_logo">
+                    <a href="http://fptplay.tv" title="FPT Play Box" target="_blank">
+                        <img src="https://fpt.vn/storage/upload/images/banners/logos/fpt-play-box.png"
+                            alt="FPT Play Box" />
+                    </a>
+                </div>
+                <div class="_item_logo">
+                    <a href="https://www.fshare.vn" title="Fshare" target="_blank">
+                        <img src="https://fpt.vn/storage/upload/images/banners/logos/fshare.png" alt="Fshare" />
+                    </a>
+                </div>
+                <div class="_item_logo">
+                    <a href="https://www.fsend.vn" title="Fsend" target="_blank">
+                        <img src="https://fpt.vn/storage/upload/images/banners/logos/fsend.png" alt="Fsend" />
+                    </a>
+                </div>
+                <div class="_item_logo">
+                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/san-pham-dich-vu/iot-smart-home/fpt-ihome.html"
+                        title="FPT iHome" target="_blank">
+                        <img src="https://fpt.vn/storage/upload/images/banners/logos/ihome.png" alt="FPT iHome" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="link-footer-mobile">
+            <div class="accordion-link-foot">
+                <span class="target-fix-link-foot" id="accordion-link-foot"></span>
+                <div>
+                    <h4 style="white-space: nowrap;">
+                        <span class="target-fix-link-foot" id="accordion-link-foot1"></span>
+                        <a href="#accordion-link-foot1" id="open-accordion-link-foot1" title="open">Về FPT Telecom</a>
+                        <a href="#accordion-link-foot" id="close-accordion-link-foot1" title="close">Về FPT Telecom</a>
+                        <div class="accordion-link-foot-content">
+                            <ul>
+                                <li>
+                                    <a href="https://fpt.vn/vi/ve-fpt-telecom/gioi-thieu-chung.html"
+                                        title="Giới thiệu chung">Giới thiệu
+                                        chung</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/vi/ve-fpt-telecom/lien-ket-thanh-vien.html"
+                                        title="Li&ecirc;n kết - Th&agrave;nh vi&ecirc;n">Li&ecirc;n kết - Th&agrave;nh
+                                        vi&ecirc;n</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/vi/ve-fpt-telecom/khach-hang-doi-tac"
+                                        title="Kh&aacute;ch h&agrave;ng - Đối t&aacute;c">Kh&aacute;ch h&agrave;ng - Đối
+                                        t&aacute;c</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/vi/ve-fpt-telecom/quan-he-co-dong"
+                                        title="Quan hệ cổ đ&ocirc;ng">Quan hệ cổ
+                                        đ&ocirc;ng</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/vi/ve-fpt-telecom/tap-doan-fpt.html"
+                                        title="Tập đo&agrave;n FPT">Tập
+                                        đo&agrave;n FPT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </h4>
+                </div>
+                <div>
+                    <h4 style="white-space: nowrap;">
+                        <span class="target-fix-link-foot" id="accordion-link-foot7"></span>
+                        <a href="#accordion-link-foot7" id="open-accordion-link-foot7" title="open">Kh&aacute;ch
+                            h&agrave;ng FPT
+                            Telecom</a>
+                        <a href="#accordion-link-foot" id="close-accordion-link-foot7" title="close">Kh&aacute;ch
+                            h&agrave;ng FPT
+                            Telecom</a>
+                        <div class="accordion-link-foot-content">
+                            <ul>
+                                <li>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/ho-tro/ho-tro-thong-tin/huong-dan-su-dung"
+                                        title="Hướng dẫn sử dụng dịch vụ">Hướng dẫn sử dụng dịch vụ</a>
+                                </li>
+                                <li>
+                                    <a href="https://gioithieubanbe.fpt.vn/" target=&quot;_blank&quot;
+                                        title="Giới thiệu bạn b&egrave;">Giới thiệu bạn b&egrave;</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/pay" title="Thanh to&aacute;n Online">Thanh to&aacute;n
+                                        Online</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/ho-tro/phan-hoi-khach-hang/gop-y.html"
+                                        title="Góp ý khách hàng">Góp ý khách hàng</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/san-pham-dich-vu/truyen-hinh-fpt/lich-phat-song.html"
+                                        title="Lịch ph&aacute;t s&oacute;ng">Lịch ph&aacute;t s&oacute;ng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </h4>
+                </div>
+                <div>
+                    <h4 style="white-space: nowrap;">
+                        <span class="target-fix-link-foot" id="accordion-link-foot13"></span>
+                        <a href="#accordion-link-foot13" id="open-accordion-link-foot13" title="open">Chưa l&agrave;
+                            kh&aacute;ch
+                            h&agrave;ng của FPT Telecom</a>
+                        <a href="#accordion-link-foot" id="close-accordion-link-foot13" title="close">Chưa l&agrave;
+                            kh&aacute;ch
+                            h&agrave;ng của FPT Telecom</a>
+                        <div class="accordion-link-foot-content">
+                            <ul>
+                                <li>
+                                    <a href="https://shop.fpt.vn" target=&quot;_blank&quot;
+                                        title="Đăng k&yacute; Online">Đăng k&yacute;
+                                        Online</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/san-pham-dich-vu/internet-fpt/cap-quang-ca-nhan.html"
+                                        title="Sản phẩm dịch vụ">Sản phẩm dịch vụ</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/khuyen-mai" title="Khuyến mại">Khuyến
+                                        mại</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/ho-tro/lien-he-24-7/diem-giao-dich"
+                                        title="T&igrave;m điểm giao dịch">T&igrave;m điểm giao dịch</a>
+                                </li>
+                                <li>
+                                    <a href="https://fpt.vn/vi/khach-hang-ca-nhan/tin-tuc" title="Tin tức">Tin tức</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </h4>
+                </div>
+            </div>
+            <div class="license-text">
+                <p>Giấy chứng nhận ĐKKD số 0101778163 do Sở Kế hoạch Đầu tư Thành phố Hà Nội cấp ngày 28/07/2005</p>
+                <p>Giấy phép cung cấp dịch vụ viễn thông số 255/GP-CVT do Cục Viễn Thông cấp ngày 07/11/2022</p>
+                <p> Công ty Cổ phần Viễn thông FPT <br /> Địa chỉ liên lạc: Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10
+                    Phạm
+                    Văn Bạch, quận Cầu Giấy, TP. Hà Nội <br /> Thư điện tử: <a href="mailto:hotrokhachhang@fpt.com"
+                        class="foot-hotline" style="font-weight: 500;">hotrokhachhang@fpt.com</a>
+                    <br /> Số điện thoại liên hệ: <a href="tel:02473002222" class="foot-hotline"
+                        style="font-weight: 500;">024
+                        7300 2222</a>
+                    <br /> Tên người đại diện: Ông Hoàng Việt Anh
+                </p>
+                <!-- <p>Hotline: <a href="tel:19006600" class="foot-hotline">1900 6600</a></p> -->
+                <p>
+                    <a href="http://online.gov.vn/Home/WebDetails/35561" target="_blank">
+                        <img alt="FPT Telecom"
+                            src="https://fpt.vn/storage/upload/images/blocks/20150827110756-dathongbao.png"
+                            style="height: 52px;" />
+                    </a>
+                </p>
+            </div>
+            <div>
+                <ul class="foot-social social-mobile">
+                    <li>
+                        <a href="https://fpt.vn/hifpt.php" style="margin: 0" target="_blank">
+                            <img class="icon"
+                                src="https://fpt.vn/storage/upload/images/menus/social-network/foot-hifpt.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/likefpt" style="margin: 0" target="_blank">
+                            <img class="icon"
+                                src="https://fpt.vn/storage/upload/images/menus/social-network/foot-youtube.png"
+                                alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/fpt.telecom/" style="margin: 0" target="_blank">
+                            <img class="icon"
+                                src="https://fpt.vn/storage/upload/images/menus/social-network/foot-instagram.png"
+                                alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://zalo.me/fpttelecom" style="margin: 0" target="_blank">
+                            <img class="icon"
+                                src="https://fpt.vn/storage/upload/images/menus/social-network/foot-zalo.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/FptTelecom/" style="margin: 0" target="_blank">
+                            <img class="icon"
+                                src="https://fpt.vn/storage/upload/images/menus/social-network/foot-facebook.png"
+                                alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container"> &copy 2018 Bản quyền thuộc về FPT Telecom </div>
+        </div>
+    </footer>
+
     <script>
+        const container = document.querySelector('.container-row');
+        const items4 = document.querySelectorAll('.item-4-price');
+
+        // Calculate the total width of all items
+        const totalWidth = Array.from(items4).reduce((acc, item) => {
+            return acc + item.offsetWidth;
+        }, 0);
+
+        // Calculate the center point
+        const centerPoint = totalWidth / 2;
+
+        // Find the center item
+        let centerItem;
+        let accumulatedWidth = 0;
+        for (const item of items4) {
+            accumulatedWidth += item.offsetWidth;
+            if (accumulatedWidth >= centerPoint) {
+                centerItem = item;
+                break;
+            }
+        }
+
+        // Scroll the container to center the centerItem
+        container.scrollLeft = centerItem.offsetLeft - (container.offsetWidth - centerItem.offsetWidth) / 2;
+
+
+
+
         let items = document.querySelectorAll('.carousel .carousel-item')
 
         items.forEach((el) => {
@@ -744,51 +1266,77 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-123"
         crossorigin="anonymous"></script>
     <script>
+        window.onload = function () {
+            var targetElement = document.getElementById('target');
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            } console.log(targetElement);
+        };
 
-        function toggleCollapse(targetId) {
-            // Get all collapse elements
-            var collapseList = document.querySelectorAll('.item-content-3-collapse .collapse');
-            var iconList = document.querySelectorAll('.bi-chevron-down');
+        function goto(url, id) {
+            if (id === 2) {
+                window.open(
+                    url,
+                    '_blank'
+                );
+            } else {
+                window.location.href = url;
+            }
 
-            // Loop through each collapse element
-            collapseList.forEach(function (collapse) {
-                // Check if the current collapse element is not the target collapse
-                if (collapse.id !== targetId) {
-                    // Hide the collapse element
-                    collapse.classList.remove('show');
-                } else {
-                    collapse.classList.add('show');
-                }
-            });
-
-            // Loop through each icon
-            iconList.forEach(function (icon) {
-                // Check if the parent of the current icon is collapsed or not
-                var isCollapsed = icon.parentElement.nextElementSibling.classList.contains('show');
-                // Add or remove 'abc' class based on collapse state
-                if (!isCollapsed) {
-                    icon.classList.add('abc');
-                } else {
-                    icon.classList.remove('abc');
-                }
-            });
         }
+
+        function toggleCollapse(targetId, button) {
+            let collapseList = document.querySelectorAll('.item-content-3-collapse .collapse-t');
+            let collapseIconList = document.querySelectorAll('.item-content-3-collapse .bi-chevron-down');
+
+            console.log(collapseList, collapseIconList);
+            for (let i = 0; i < collapseList.length; i++) {
+                collapseList[i].classList.toggle('show');
+                if (collapseList[i].id.includes(targetId)) {
+                    console.log(2)
+                    collapseList[i].classList.toggle('show');
+                    collapseIconList[i].classList.toggle('abc');
+                } else {
+                    console.log(1)
+                    collapseList[i].classList.remove('show');
+                    collapseIconList[i].classList.remove('abc');
+                }
+            }
+        }
+
         function toggleCollapse2(targetId) {
             // Get all collapse elements
-            var collapseList = document.querySelectorAll('.item-content-7-collapse .collapse');
+            var collapseList = document.querySelectorAll('.item-content-7-collapse .collapse7');
+            var collapseIconList = document.querySelectorAll('.item-content-7-collapse .icon-bi');
 
-            // Loop through each collapse element
-            collapseList.forEach(function (collapse) {
-                console.log(collapse);
-                // Check if the current collapse element is not the target collapse
-                if (collapse.id !== targetId) {
-                    // Hide the collapse element
-                    collapse.classList.remove('show');
-
+            for (var i = 0; i < collapseList.length; i++) {
+                collapseList[i].classList.toggle('show');
+                // collapseList[i].classList.toggle('show');
+                if (collapseList[i].id === targetId) {
+                    collapseList[i].classList.toggle('show');
+                    collapseIconList[i].classList.toggle('bi-dash');
+                    collapseIconList[i].classList.toggle('bi-plus-lg');
+                    if (collapseIconList[i].classList.contains('bi-dash')) {
+                        collapseIconList[i].innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                    </svg>`;
+                    } else {
+                        collapseIconList[i].innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                    </svg>`;
+                    }
                 } else {
-                    collapse.classList.add('show');
+                    collapseList[i].classList.remove('show');
+                    collapseIconList[i].classList.remove('bi-dash');
+                    collapseIconList[i].classList.add('bi-plus-lg');
+                    collapseIconList[i].innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                </svg>`;
                 }
-            });
+            }
         }
         function toggleVideo() {
             console.log(111);
