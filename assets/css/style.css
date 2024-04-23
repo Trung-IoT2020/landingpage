@@ -207,6 +207,7 @@ header .button-header button {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  width: 100px;
 }
 .bg-body-tertiary {
   background-color: #fff !important;
@@ -683,6 +684,13 @@ h6 {
   margin: 0;
   padding: 0 !important;
   height: 230px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  /* width: 200px; */
+  overflow: hidden;
 }
 
 .i6-cus h6 {
@@ -783,6 +791,16 @@ h6 {
     align-items: center;
     justify-content: center;
   }
+  .image-item-content-3,
+  .image-item-content-7 {
+    width: 100%;
+  }
+  .item-1-mobile {
+    display: block;
+  }
+  .item-1-pc {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1099px) {
@@ -802,6 +820,12 @@ h6 {
   }
   .col-6 {
     width: 50%;
+  }
+  .item-1-mobile {
+    display: none;
+  }
+  .item-1-pc {
+    display: block;
   }
 }
 .carousel-item {
@@ -844,22 +868,14 @@ h6 {
   .item-content-4 {
     padding: 32px 24px !important;
   }
-  .image-item-content-3,
-  .image-item-content-7 {
-    width: 100%;
-  }
+
   .container-row {
     justify-content: normal;
   }
   .item-4-price {
     width: 100%;
   }
-  .item-1-mobile {
-    display: block;
-  }
-  .item-1-pc {
-    display: none;
-  }
+
   header {
     padding: 0.75rem 4%;
   }
@@ -925,12 +941,7 @@ h6 {
   .item-4-price {
     width: auto;
   }
-  .item-1-mobile {
-    display: none;
-  }
-  .item-1-pc {
-    display: block;
-  }
+
   header {
     padding: 0.75rem 8%;
   }
