@@ -6,6 +6,7 @@
   background-image: url("../image/page-detail/bg-page-top-1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
 .body-top-2 {
   margin: auto;
@@ -15,6 +16,7 @@
   background-image: url("../image/page-detail/bg-page-top-2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
 .body-top-3 {
   margin: auto;
@@ -24,6 +26,7 @@
   background-image: url("../image/page-detail/bg-page-top-3.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
 .body-top-4 {
   margin: auto;
@@ -33,6 +36,7 @@
   background-image: url("../image/page-detail/bg-page-top-4.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
 .body-top-5 {
   margin: auto;
@@ -42,11 +46,12 @@
   background-image: url("../image/page-detail/bg-page-top-5.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
 
 .popup-content-top {
   width: 500px;
-  padding: 16px;
+  padding: 24px;
   z-index: 1000;
   position: absolute;
   background: #fff;
@@ -54,6 +59,9 @@
   left: 8%;
   bottom: -10%;
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.08);
+}
+.popup-content-top h4 {
+  margin-top: 32px !important;
 }
 .popup-content-top h1 {
   color: #3d3d3d;
@@ -71,6 +79,9 @@
 
 .page-content {
   margin: auto;
+}
+.page-content li {
+  list-style: disc;
 }
 .item-1 {
   /* margin: 60px 0; */
@@ -92,7 +103,7 @@ h2 {
 h3 {
   color: #3d3d3d;
   font-family: "VL-AmpleSoft", sans-serif !important;
-  font-size: 24px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -128,6 +139,7 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: 16px;
 }
 .img-col-6 {
   padding: 40px;
@@ -240,7 +252,7 @@ svg {
   }
   .popup-content-top {
     width: 500px !important;
-    left: 8%;
+    left: 10%;
     bottom: -10%;
     transform: none;
   }
@@ -248,9 +260,13 @@ svg {
     padding: 120px 8% 80px;
   }
   h3 {
-    height: 36px;
+    height: 48px;
   }
   .col-6 {
     padding: 0 50px;
   }
+}
+
+.item-content-4 {
+  margin: 0 10%;
 }

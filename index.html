@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>F-Safe Go, Online an toàn mọi khoảnh khắc</title>
     <meta name="description"
-        content="F-Safe go: Giải pháp bảo mật toàn diện cho cả gia đình – hợp tác giữa FPT Telecom và Tập đoàn bảo mật F-Secure số 1 tại Phần Lan, đã đạt giải Bảo mật tốt nhất từ AV-Test - giúp bảo vệ các thiết bị Máy tính và Điện thoại khỏi các cuộc tấn công mạng và bảo vệ quyền riêng tư, cũng như dữ liệu cá nhân của người dùng trước các hiểm họa mất an toàn từ Internet." />
+        content="F-Safe Go: giải pháp Internet an toàn - giúp bảo vệ thiết bị của bạn khỏi Vi-rút, phần mềm độc hại, lừa đảo, ứng dụng theo dõi và các mối đe dọa trực tuyến khác." />
     <meta name="keywords" content="Fsafe go, phần mềm diệt virus, phần mềm quét virus" />
     <meta name="author" content="FPT Telecom" />
     <!-- Mobile Specific Meta -->
@@ -15,22 +15,25 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <meta name="keywords" content="Hi FPT, hifpt, FPT Telecom, F-Safe Go, FSafeGo , FSafe Go" />
+
     <meta property="og:url" content="">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Đăng ký online F-Safe Go dễ dàng, bảo đảm online an toàn">
+    <meta property="og:title" content="Đăng ký F-Safe Go dễ dàng, đảm bảo Internet an toàn">
     <meta property="og:description"
-        content="F-Safe go: Giải pháp bảo mật toàn diện cho cả gia đình – hợp tác giữa FPT Telecom và Tập đoàn bảo mật F-Secure số 1 tại Phần Lan, đã đạt giải Bảo mật tốt nhất từ AV-Test - giúp bảo vệ các thiết bị Máy tính và Điện thoại khỏi các cuộc tấn công mạng và bảo vệ quyền riêng tư, cũng như dữ liệu cá nhân của người dùng trước các hiểm họa mất an toàn từ Internet.">
-    <meta property="og:image" content="./favicons/thumb-web.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        content="F-Safe Go: giải pháp Internet an toàn - giúp bảo vệ thiết bị của bạn khỏi Vi-rút, phần mềm độc hại, lừa đảo, ứng dụng theo dõi và các mối đe dọa trực tuyến khác.">
+    <meta property="og:image" content="https://hi-static.fpt.vn/sys/hifpt/pnc_pdx/img/banner-fsafe-go.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="436" />
+    <meta property="og:image:height" content="228" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/popup-left.css" />
     <link href="https://fpt.vn/assets/frontend/css/font-face.min.css" rel="stylesheet" type="text/css" />
     <link href="https://fpt.vn/assets/frontend/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
@@ -46,12 +49,15 @@
             padding-bottom: 10px;
         }
     </style>
+    <script src="https://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js"></script>
     <script src="https://fpt.vn/assets/frontend/js/jquery-2.2.3.min.js" type="text/javascript"></script>
     <script src="./assets/owl.carousel/owl.carousel.min.js" type="text/javascript"></script>
     <script src="https://fpt.vn/assets/assetv2/owl.carousel/owl-inet.js" type="text/javascript"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/url.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/setup-tracking.js"></script>
     <script type="application/ld+json">
         {
           "@context": "http://schema.org",
@@ -61,17 +67,27 @@
           "url" : ""
         }
         </script>
+
+
 </head>
 
 <body>
     <header>
         <div class="header-title">
+
+            <a class="icon-left-menu" id="openModalBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 7H21" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M3 12H21" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M3 17H21" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </a>
             <div class="logo-header">
-                <a href="https://fpt.vn/vi">
+                <a onclick="goto('https://shop.fpt.vn/#sec-combo-skycam',1)">
                     <img src="./assets/image/header/logo-fpt.svg" alt="logo-fpt" width="auto" height="64">
                 </a>
                 <img src="./assets/image/header/logo-center.svg" alt="logo-center" style="padding: 0 16px;">
-                <a href="/">
+                <a onclick="goto('/',1)">
                     <img src="./assets/image/header/logo-fsafe-go.svg" alt="logo-fsafe-go" width="auto" height="64">
                 </a>
             </div>
@@ -80,42 +96,52 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/">Trang chủ</a>
+                                <a class="nav-link" aria-current="page" onclick="goto('/',1)">Trang chủ</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown" style="width:200px;">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Tính năng nổi bật
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/page-detail-1.html">Bảo vệ truy cập trên
+                                <ul class="dropdown-menu" style="border-radius: 12px;">
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-3.html',1)">Bảo vệ truy cập
+                                            trên
                                             Browser</a></li>
-                                    <li><a class="dropdown-item" href="/page-detail-2.html">Ngăn nguy cơ lộ dữ liệu cá
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-2.html',1)">Ngăn nguy cơ lộ
+                                            dữ liệu cá
                                             nhân</a></li>
-                                    <li><a class="dropdown-item" href="/page-detail-3.html">Chống theo dõi với VPN</a>
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-4.html',1)">Chống theo dõi
+                                            với VPN</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="/page-detail-4.html">Bảo vệ thiết bị</a></li>
-                                    <li><a class="dropdown-item" href="/page-detail-5.html">Bảo vệ trẻ nhỏ</a></li>
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-1.html',1)">Bảo vệ thiết
+                                            bị</a></li>
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-5.html',1)">Bảo vệ trẻ
+                                            nhỏ</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#item-content-4">Bảng giá</a>
+                                <a class="nav-link" onclick="goto('#item-content-4',1)">Bảng giá</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown" style="width:130px;">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Hướng dẫn
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#item-content-5">Hướng dẫn đăng ký</a></li>
-                                    <li><a class="dropdown-item" href="#item-content-6">FAQs</a></li>
+                                <ul class="dropdown-menu" style="border-radius: 12px;">
+                                    <li><a class="dropdown-item" onclick="goto('#item-content-5',1)">Hướng dẫn đăng
+                                            ký</a></li>
+                                    <li><a class="dropdown-item" onclick="goto('#item-content-6',1)">FAQs</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Quản lý</a>
+                                <a class="nav-link"
+                                    onclick="goto('https://safeavenue-jp.f-secure.com/iframe/-sso/fpt_telecom/',1)">Quản
+                                    lý</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Cài App</a>
+                            <li class="nav-item" style="justify-content: left;">
+                                <a class="nav-link"
+                                    onclick="goto('https://safeavenue-jp.f-secure.com/iframe/-installers/fpt_telecom/',1)">Cài
+                                    App</a>
                             </li>
                         </ul>
                     </div>
@@ -130,12 +156,105 @@
 
         </div>
     </header>
+    <div id="myModal" class="modal">
+        <div class="modal-content" style="width: 75%;">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <a class="item-menu-modal" onclick="goto('/',1)">Trang chủ</a>
+                <a class="item-menu-modal toggle-feature" onclick="openToggle('toggle-feature')">Tính năng nỗi bật <div
+                        style="margin-left: 8px;"><svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="17" viewBox="0 0 16 17" fill="none">
+                            <path
+                                d="M11.9465 5.95312H7.79316H4.05317C3.41317 5.95312 3.09317 6.72646 3.5465 7.17979L6.99983 10.6331C7.55317 11.1865 8.45317 11.1865 9.0065 10.6331L10.3198 9.31979L12.4598 7.17979C12.9065 6.72646 12.5865 5.95312 11.9465 5.95312Z"
+                                fill="#3D3D3D" />
+                        </svg></div></a>
+                <div class="plus-feature">
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-3.html',1)">Bảo vệ truy cập trên Browser
+                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path
+                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
+                                    fill="#3D3D3D" />
+                            </svg></div>
+                    </a>
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-2.html',1)">Ngăn nguy cơ lộ dữ liệu cá
+                        nhân
+                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path
+                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
+                                    fill="#3D3D3D" />
+                            </svg></div>
+                    </a>
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-4.html',1)">Chống theo dõi với VPN
+                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path
+                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
+                                    fill="#3D3D3D" />
+                            </svg></div>
+                    </a>
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-1.html',1)">Bảo vệ thiết bị
+                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path
+                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
+                                    fill="#3D3D3D" />
+                            </svg></div>
+                    </a>
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-5.html',1)">Bảo vệ trẻ nhỏ
+                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path
+                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
+                                    fill="#3D3D3D" />
+                            </svg></div>
+                    </a>
+
+                </div>
+
+
+                <a class="item-menu-modal" onclick="goto('#item-content-4',1)">Bảng giá</a>
+                <a class="item-menu-modal toggle-guide" onclick="openToggle('toggle-guide')">Hướng dẫn <div
+                        style="margin-left: 8px;">
+                        <svg class="icon-menu2" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                            viewBox="0 0 16 17" fill="none">
+                            <path
+                                d="M11.9465 5.95312H7.79316H4.05317C3.41317 5.95312 3.09317 6.72646 3.5465 7.17979L6.99983 10.6331C7.55317 11.1865 8.45317 11.1865 9.0065 10.6331L10.3198 9.31979L12.4598 7.17979C12.9065 6.72646 12.5865 5.95312 11.9465 5.95312Z"
+                                fill="#3D3D3D" />
+                        </svg>
+                    </div></a>
+                <div class="plus-guide">
+                    <a class="item-menu-modal-plus" onclick="goto('#item-content-5',1)">Hướng dẫn đăng ký
+                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path
+                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
+                                    fill="#3D3D3D" />
+                            </svg></div>
+                    </a>
+                    <a class="item-menu-modal-plus" onclick="goto('#item-content-6',1)">FAQs
+                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path
+                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
+                                    fill="#3D3D3D" />
+                            </svg></div>
+                    </a>
+                </div>
+                <a class="item-menu-modal"
+                    onclick="goto('https://safeavenue-jp.f-secure.com/iframe/-sso/fpt_telecom/',1)">Quản lý</a>
+                <a class="item-menu-modal"
+                    onclick="goto('https://safeavenue-jp.f-secure.com/iframe/-installers/fpt_telecom/',1)">Cài app</a>
+            </div>
+
+        </div>
+    </div>
     <div class="body-content" style="margin-top: 80px;">
         <div class="item-content item-content-1" id="item-content-1">
             <div class="row">
                 <div class="col-6 text-center item-1-mobile">
-
-                    <img src="./assets/image/content/home-content-1.png" alt="home-1" width="auto" height="auto"
+                    <img src="./assets/image/content/home-content-1-1.png" alt="home-1" width="auto" height="auto"
                         class="home-1">
 
                 </div>
@@ -143,7 +262,7 @@
                     <div class="content-text">
                         <h1>F-Safe Go:</h1>
                         <h2>Online <strong>an toàn</strong></h2>
-                        <h4>
+                        <h4 style="margin: 40px 0">
                             F-Safe Go là ứng dụng bảo mật hợp tác giữa FPT Telecom và Tập đoàn bảo mật F-Scure tại Phần
                             Lan, giúp bảo vệ thiết bị của bạn khỏi Vi-rút, phần mềm độc hại, lừa đảo, ứng dụng theo dõi
                             và các mối đe dọa trực tuyến khác.
@@ -159,16 +278,16 @@
                 </div>
                 <div class="col-6 text-end item-1-pc">
 
-                    <img src="./assets/image/content/home-content-1.png" alt="home-1" width="auto" height="auto"
+                    <img src="./assets/image/content/home-content-1-1.png" alt="home-1" width="auto" height="auto"
                         class="home-1">
 
                 </div>
             </div>
 
         </div>
-        <div class="item-content item-content-2" id="item-content-2">
-            <div class="row">
-                <div class="col-12">
+        <div class="item-content item-content-2 " id="item-content-2">
+            <div class="row ">
+                <div class="col-12 ">
                     <div class="content-text">
                         <h2 style="font-size: 48px;">Không còn lo lắng khi lướt Internet</h2>
                         <h5>
@@ -180,8 +299,9 @@
 
             </div>
             <div class="row">
-                <div class="col-6 text-start" style="max-height: 630px; margin-top: 16px;">
-                    <a class="item-content-2-left l-1" onclick="goto('/page-detail-1.html')">
+                <div class="col-6 text-start  goscroll" data-anitype="animate__fadeInUp"
+                    style="max-height: 630px; margin-top: 16px;">
+                    <a class="item-content-2-left l-1" onclick="goto('/page-detail-3.html',1)">
                         <div class="l-1-text">
                             <div>
                                 <h2>Bảo vệ truy cập</h2>
@@ -196,7 +316,7 @@
                         <img src="./assets/image/content/image-l2-1.png" alt="image-l2-1" width="auto" height="auto"
                             style="top: 0;">
                     </a>
-                    <a class="item-content-2-left l-2" onclick="goto('/page-detail-2.html')"
+                    <a class="item-content-2-left l-2" onclick="goto('/page-detail-2.html',1)"
                         style="background: linear-gradient(0deg, #f5f5f5 0%, #ececec 100%);">
                         <div class="l-2-text">
                             <div>
@@ -214,8 +334,9 @@
 
                     </a>
                 </div>
-                <div class="col-6 text-end" style="max-height: 630px; margin-top: 16px;">
-                    <a class="item-content-2-right r-1" onclick="goto('/page-detail-3.html')">
+                <div class="col-6 text-end goscroll" data-anitype="animate__fadeInUp"
+                    style="max-height: 630px; margin-top: 16px;">
+                    <a class="item-content-2-right r-1" onclick="goto('/page-detail-1.html',1)">
                         <div class="r-text">
                             <div>
                                 <h2>Bảo vệ</h2>
@@ -231,7 +352,7 @@
                             style="bottom: 0;border-radius: 16px;">
 
                     </a>
-                    <a class="item-content-2-right r-1" onclick="goto('/page-detail-4.html')">
+                    <a class="item-content-2-right r-1" onclick="goto('/page-detail-5.html',1)">
                         <div class="r-text">
                             <div>
                                 <h2>Bảo vệ trẻ nhỏ</h2>
@@ -246,7 +367,7 @@
                             style="bottom: 0;border-radius: 16px;">
 
                     </a>
-                    <a class="item-content-2-right r-1" onclick="goto('/page-detail-5.html')">
+                    <a class="item-content-2-right r-1" onclick="goto('/page-detail-4.html',1)">
                         <div class="r-text">
                             <div>
                                 <h2>Chống theo dõi</h2>
@@ -268,14 +389,15 @@
         <div style="height:80px;" id="item-content-3"></div>
         <div class="item-content item-content-3">
             <div class="row" style="align-items: start;">
-                <div class="col-6 text-start">
-                    <img src="./assets/image/content/image-item-content-3.png" alt="image-item-content-3" width="auto"
+                <div class="col-6 text-start goscroll" data-anitype="animate__fadeInLeft">
+                    <img src="./assets/image/content/image-item-content-3-3.png" alt="image-item-content-3" width="auto"
                         class="image-item-content-3" height="auto">
                 </div>
-                <div class="col-6 text-start">
+                <div class="col-6 text-start goscroll" data-anitype="animate__fadeInRight">
                     <h2>Một ứng dụng <span style="color: var(--Brand-Blue-Primary);">duy nhất</span></h2>
                     <h2>bảo vệ cùng lúc nhiều thiết bị</h2>
-                    <h6>F-Safe Go có tất cả những tính năng mạnh mẽ để bảo vệ các thiết bị của bạn, bao gồm máy tính
+                    <h6 style="margin: 24px 0 40px !important;">F-Safe Go có tất cả những tính năng mạnh mẽ để bảo vệ
+                        các thiết bị của bạn, bao gồm máy tính
                         Windows, Mac; điện thoại thông minh, máy tính bảng Android và iOS</h6>
 
                     <div class="item-content-3-collapse">
@@ -294,7 +416,8 @@
                             </svg>
                         </a>
                         <div class="collapse collapse-t  show" id="collapseExample1">
-                            <h5>Với nhóm tính năng đảm bảo an toàn, thiết bị của bạn sẽ được bảo vệ khỏi virus, mã độc;
+                            <h5 style="padding-top: 8px !important">Với nhóm tính năng đảm bảo an toàn, thiết bị của bạn
+                                sẽ được bảo vệ khỏi virus, mã độc;
                                 đặc biệt, bạn có thể giúp con trẻ tránh xa các nội dung độc hại hay sử dụng Internet
                                 nhiều quá mức.</h5>
                             <a class="arrow-i3" href="#">
@@ -340,7 +463,8 @@
                             </svg>
                         </a>
                         <div class="collapse collapse-t " id="collapseExample2">
-                            <h5>Với nhóm tính năng bảo vệ sự riêng tư, các kết nối của bạn sẽ được mã hóa, ngăn chặn
+                            <h5 style="padding-top: 8px !important">Với nhóm tính năng bảo vệ sự riêng tư, các kết nối
+                                của bạn sẽ được mã hóa, ngăn chặn
                                 theo dõi và đánh cắp thông tin; đảm bảo lướt web an toàn khi sử dụng các mạng Wi-Fi công
                                 cộng.
                             </h5>
@@ -387,7 +511,8 @@
                             </svg>
                         </a>
                         <div class="collapse collapse-t " id="collapseExample3">
-                            <h5>Với nhóm tính năng đảm bảo an toàn, thiết bị của bạn sẽ được bảo vệ khỏi virus, mã độc;
+                            <h5 style="padding-top: 8px !important">Với nhóm tính năng đảm bảo an toàn, thiết bị của bạn
+                                sẽ được bảo vệ khỏi virus, mã độc;
                                 đặc biệt, bạn có thể giúp con trẻ tránh xa các nội dung độc hại hay sử dụng Internet
                                 nhiều quá mức.</h5>
 
@@ -414,12 +539,13 @@
             </div>
         </div>
         <div style="height:80px;" id="item-content-4"></div>
-        <div class="item-content item-content-4">
+        <div class="item-content item-content-4 goscroll" data-anitype="animate__fadeInUp">
             <h2 style="font-size: 48px;text-align: center;">Bảng giá</h2>
-            <h5 style="text-align: center;">Sở hữu ngay một ứng dụng duy nhất để bảo vệ cùng lúc tới 25 thiết bị và mọi
+            <h5 style="text-align: center;    padding-top: 24px !important;">Sở hữu ngay một ứng dụng duy nhất để bảo vệ
+                cùng lúc tới 25 thiết bị và mọi
                 hoạt động của bạn
                 trên Internet.</h5>
-            <div class="content-payment-4">
+            <div class="content-payment-4" style="padding-top: 24px !important;">
                 <div class="i-content-payment-4">
                     <img src="./assets/image/content/call-calling.svg" alt="icon-calling">
                     Hỗ trợ 24/7
@@ -437,7 +563,7 @@
                 <div class="item-4-price">
                     <div>
                         <h2>F-SAFE GO - 3</h2>
-                        <h6>Tài khoản đăng ký và bảo vệ được <br>3 thiết bị</h6>
+                        <h6>Tài khoản đăng ký và bảo vệ được 3 thiết bị</h6>
                         <div class="col-text-price"><strong>35.000</strong><span>vnđ/tháng</span></div>
                         <button onclick="goto('https://shop.fpt.vn/fsafe-go/register/fsafe-go-3d',2)"
                             target="_blank">Mua
@@ -447,7 +573,7 @@
                 <div class="item-4-price" style="border: 3px solid  #ff730a;">
                     <div>
                         <h2>F-SAFE GO - 5</h2>
-                        <h6>Tài khoản đăng ký và bảo vệ được <br>5 thiết bị</h6>
+                        <h6>Tài khoản đăng ký và bảo vệ được 5 thiết bị</h6>
                         <div class="col-text-price"><strong>40.000</strong><span>vnđ/tháng</span></div>
                         <button onclick="goto('https://shop.fpt.vn/fsafe-go/register/fsafe-go-5d',2)"
                             target="_blank">Mua
@@ -458,7 +584,7 @@
                 <div class="item-4-price">
                     <div>
                         <h2>F-SAFE GO - 15</h2>
-                        <h6>Tài khoản đăng ký và bảo vệ được <br>15 thiết bị</h6>
+                        <h6>Tài khoản đăng ký và bảo vệ được 15 thiết bị</h6>
                         <div class="col-text-price"><strong>50.000</strong><span>vnđ/tháng</span></div>
                         <button onclick="goto('https://shop.fpt.vn/fsafe-go/register/fsafe-go-15d',2)"
                             target="_blank">Mua
@@ -470,7 +596,7 @@
         <div style="height:80px;" id="item-content-5"></div>
         <div class="item-content item-content-5">
             <div class="row">
-                <div class="col-5">
+                <div class="col-5 goscroll" data-anitype="animate__fadeInLeft">
                     <h2>Đăng ký đơn giản <br>
                         chỉ với 3 bước</h2>
                     <div class="i5-col-content">
@@ -525,19 +651,20 @@
                         </div> Thanh toán theo phương thức dễ dàng nhất
                     </div>
                 </div>
-                <div class="col-7 text-end">
+                <div class="col-7 text-end  goscroll" data-anitype="animate__fadeInRight">
                     <a id="playButton" onclick="toggleVideo()">
                         <img id="videoThumbnail" src="./assets/image/content/image-video-fsafe-go.png" alt="image-video"
                             width="auto" class="image-video" height="auto">
 
-                        <iframe width="560" height="315" class="image-video" style="display: none;" id="videoFrame"
-                            src="https://www.youtube.com/embed/XvwK5hXagpI" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="860" height="500" class="image-video" style="display: none;" id="videoFrame"
+                            src="https://www.youtube.com/embed/XvwK5hXagpI" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </a>
                 </div>
             </div>
         </div>
         <div style="height:80px;" id="item-content-6"></div>
-        <div class="item-content item-content-6">
+        <div class="item-content item-content-6 goscroll" data-anitype="animate__fadeIn">
             <h2>Khách hàng nói gì về F-Safe Go</h2>
 
             <div class="row mx-auto my-auto justify-content-center">
@@ -671,7 +798,7 @@
         <div style="height:80px;" id="item-content-7"></div>
         <div class="item-content item-content-7">
             <div class="row" style="align-items: start;">
-                <div class="col-6 text-start">
+                <div class="col-6 text-start goscroll" data-anitype="animate__fadeInLeft">
                     <h2>Những câu hỏi thường gặp?</h2>
                     <div class="item-content-7-collapse">
                         <a class="i7-collapse" type="button" data-bs-toggle="collapse"
@@ -682,14 +809,15 @@
                             </div>
                             <div class="icon-bi">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    class="bi bi-dash" viewBox="0 0 16 16">
+                                    class="bi bi-plus-lg" viewBox="0 0 16 16">
                                     <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
                                 </svg>
                             </div>
 
                         </a>
                         <div class="collapse collapse7 show" id="collapseExample7-1">
-                            <h5>F-Safe Go hỗ trợ Windows 8.1, Windows 10, Windows 11, macOS 11 (Big Sur) hoặc mới hơn,
+                            <h5 style=" padding-top: 8px !important;">F-Safe Go hỗ trợ Windows 8.1, Windows 10, Windows
+                                11, macOS 11 (Big Sur) hoặc mới hơn,
                                 iOS 15 hoặc mới hơn và Android 8.0 hoặc mới hơn. Các máy tính bảng dựa trên ARM không
                                 được hỗ trợ.</h5>
                         </div>
@@ -712,7 +840,8 @@
                             </div>
                         </a>
                         <div class="collapse collapse7" id="collapseExample7-2">
-                            <h5>Nếu bạn đang sử dụng F-Safe Go và muốn thay đổi đăng ký F-Safe Go hiện có của mình, đăng
+                            <h5 style=" padding-top: 8px !important;">Nếu bạn đang sử dụng F-Safe Go và muốn thay đổi
+                                đăng ký F-Safe Go hiện có của mình, đăng
                                 nhập vào Hi FPT (bằng số điện thoại quản lý F-Safe Go) và nhấp vào mục F-Safe Go ở màn
                                 hình home. Chọn Quản lý gói F-Safe Go và chọn Thay đổi gói, chọn gói cần thay đổi và
                                 thực hiện thanh toán. Đăng ký của bạn sẽ được nâng cấp ngay lập tức.</h5>
@@ -735,7 +864,8 @@
                             </div>
                         </a>
                         <div class="collapse collapse7" id="collapseExample7-3">
-                            <h5>Gia hạn gói F-Safe Go tại đây. Hoặc gia hạn trực tiếp trên ứng dụng F-Safe Go (Chọn
+                            <h5 style=" padding-top: 8px !important;">Gia hạn gói F-Safe Go tại đây. Hoặc gia hạn trực
+                                tiếp trên ứng dụng F-Safe Go (Chọn
                                 profile, sau đó chọn Giới thiệu và trợ giúp, chọn Gia hạn). Đăng ký của bạn được gia hạn
                                 dựa trên đăng ký ban đầu của bạn (thời hạn cấp phép và số lượng thiết bị)</h5>
                         </div>
@@ -757,17 +887,18 @@
                             </div>
                         </a>
                         <div class="collapse collapse7" id="collapseExample7-4">
-                            <h5>Sau khi thực hiện mua gói thành công, khách hàng sẽ nhận được thông tin tài khoản qua
+                            <h5 style=" padding-top: 8px !important;">Sau khi thực hiện mua gói thành công, khách hàng
+                                sẽ nhận được thông tin tài khoản qua
                                 SMS số điện thoại đăng ký, khách hàng thực hiện tải app F-Safe Go và đăng nhập với tài
                                 khoản đã được cung cấp.</h5>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-6 text-center">
+                <div class="col-6 text-center  goscroll" data-anitype="animate__fadeInRight">
                     <a>
-                        <img id="i7" src="./assets/image/content/i7.png" alt="image-item-content-7" width="auto"
-                            height="auto" class="image-item-content-7">
+                        <img id="i7" src="./assets/image/content/i7-v2.png" alt="image-item-content-7" width="auto"
+                            height="auto" class="image-item-content-7" style="width: 70%;">
 
                     </a>
                 </div>
@@ -775,11 +906,11 @@
 
         </div>
         <div style="height: 80px;" id="item-content-8"></div>
-        <div class="item-content item-content-8">
+        <div class="item-content item-content-8 goscroll" data-anitype="animate__fadeInUp">
             <h2>Cập nhật tin mới nhất</h2>
             <a style=" width: 100%;justify-content: center;" class="item-8-pc"
                 onclick="goto('https://shop.fpt.vn/tin-tuc/f-safe-go-giai-phap-bao-mat-du-lieu-toan-dien-cho-hanh-trinh-truc-tuyen-cua-ban-181',2)">
-                <img id="i8" src="./assets/image/content/i8.png" alt="i8" width="auto" height="auto">
+                <img id="i8" src="./assets/image/content/i8-v2.png" alt="i8" width="auto" height="auto">
             </a>
             <div class="item-8-mobile">
                 <a
@@ -799,9 +930,22 @@
                         style="width: 100%;    margin: 8px 0;"></a>
             </div>
         </div>
+
     </div>
     </div>
-    <footer class="footer">
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer  goscroll" data-anitype="animate__fadeIn">
         <div class="container link-footer-desktop">
             <div class="row row-fptlogo">
                 <div class="col-sm-6">
@@ -817,35 +961,35 @@
                             <a href="https://fpt.vn/hifpt.php" style="margin: 0" target="_blank">
                                 <img class="icon"
                                     src="https://fpt.vn/storage/upload/images/menus/social-network/foot-hifpt.png"
-                                    alt="" />
+                                    alt="foot-hifpt" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/user/likefpt" style="margin: 0" target="_blank">
                                 <img class="icon"
                                     src="https://fpt.vn/storage/upload/images/menus/social-network/foot-youtube.png"
-                                    alt="" />
+                                    alt="foot-youtube" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/fpt.telecom/" style="margin: 0" target="_blank">
                                 <img class="icon"
                                     src="https://fpt.vn/storage/upload/images/menus/social-network/foot-instagram.png"
-                                    alt="" />
+                                    alt="foot-instagram" />
                             </a>
                         </li>
                         <li>
                             <a href="http://zalo.me/fpttelecom" style="margin: 0" target="_blank">
                                 <img class="icon"
                                     src="https://fpt.vn/storage/upload/images/menus/social-network/foot-zalo.png"
-                                    alt="" />
+                                    alt="foot-zalo" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/FptTelecom/" style="margin: 0" target="_blank">
                                 <img class="icon"
                                     src="https://fpt.vn/storage/upload/images/menus/social-network/foot-facebook.png"
-                                    alt="" />
+                                    alt="foot-facebook" />
                             </a>
                         </li>
                     </ul>
@@ -1176,34 +1320,36 @@
                     <li>
                         <a href="https://fpt.vn/hifpt.php" style="margin: 0" target="_blank">
                             <img class="icon"
-                                src="https://fpt.vn/storage/upload/images/menus/social-network/foot-hifpt.png" alt="" />
+                                src="https://fpt.vn/storage/upload/images/menus/social-network/foot-hifpt.png"
+                                alt="foot-hifpt" />
                         </a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/user/likefpt" style="margin: 0" target="_blank">
                             <img class="icon"
                                 src="https://fpt.vn/storage/upload/images/menus/social-network/foot-youtube.png"
-                                alt="" />
+                                alt="foot-youtube" />
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/fpt.telecom/" style="margin: 0" target="_blank">
                             <img class="icon"
                                 src="https://fpt.vn/storage/upload/images/menus/social-network/foot-instagram.png"
-                                alt="" />
+                                alt="foot-instagram" />
                         </a>
                     </li>
                     <li>
                         <a href="http://zalo.me/fpttelecom" style="margin: 0" target="_blank">
                             <img class="icon"
-                                src="https://fpt.vn/storage/upload/images/menus/social-network/foot-zalo.png" alt="" />
+                                src="https://fpt.vn/storage/upload/images/menus/social-network/foot-zalo.png"
+                                alt="foot-zalo" />
                         </a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/FptTelecom/" style="margin: 0" target="_blank">
                             <img class="icon"
                                 src="https://fpt.vn/storage/upload/images/menus/social-network/foot-facebook.png"
-                                alt="" />
+                                alt="foot-facebook" />
                         </a>
                     </li>
                 </ul>
@@ -1214,6 +1360,146 @@
         </div>
     </footer>
 
+    <script>
+        const toggleFeatureLink = document.querySelector('.toggle-feature');
+        const plusFeatureElement = document.querySelector('.plus-feature');
+        const plusGuideElement = document.querySelector('.plus-guide');
+        const iconlement = document.querySelector('.icon-menu');
+        const iconlement2 = document.querySelector('.icon-menu2');
+        plusGuideElement.style.display = 'none';
+        plusFeatureElement.style.display = 'none';
+        function openToggle(str) {
+
+            if (str === 'toggle-feature') {
+                if (plusFeatureElement.style.display == 'none') {
+                    plusFeatureElement.style.display = 'block';
+                    iconlement.style.transform = 'rotate(270deg)';
+                } else {
+                    plusFeatureElement.style.display = 'none';
+                    iconlement.style.transform = 'rotate(0)';
+                }
+            } else {
+                if (plusGuideElement.style.display === 'none') {
+                    plusGuideElement.style.display = 'block';
+                    iconlement2.style.transform = 'rotate(270deg)';
+                } else {
+                    plusGuideElement.style.display = 'none';
+                    iconlement2.style.transform = 'rotate(0)';
+                }
+            }
+
+        };
+
+        setTimeout(() => {
+            openView('home');
+            toggleCollapse2('collapseExample7-1');
+        }, 500);
+
+        let items = document.querySelectorAll('.carousel .carousel-item')
+
+        items.forEach((el) => {
+            const minPerSlide = 3
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        });
+
+        function toggleCollapse(targetId, button) {
+            let collapseList = document.querySelectorAll('.item-content-3-collapse .collapse-t');
+            let collapseIconList = document.querySelectorAll('.item-content-3-collapse .bi-chevron-down');
+            for (let i = 0; i < collapseList.length; i++) {
+                collapseList[i].classList.toggle('show');
+                if (collapseList[i].id.includes(targetId)) {
+                    collapseList[i].classList.toggle('show');
+                    collapseIconList[i].classList.toggle('abc');
+                } else {
+                    collapseList[i].classList.remove('show');
+                    collapseIconList[i].classList.remove('abc');
+                }
+            }
+        }
+
+        function toggleCollapse2(targetId) {
+            // Get all collapse elements
+            var collapseList = document.querySelectorAll('.item-content-7-collapse .collapse7');
+            var collapseIconList = document.querySelectorAll('.item-content-7-collapse .icon-bi');
+
+            console.log(1111, targetId);
+            for (var i = 0; i < collapseList.length; i++) {
+                collapseList[i].classList.toggle('show');
+                // collapseList[i].classList.toggle('show');
+                if (collapseList[i].id === targetId) {
+                    collapseList[i].classList.toggle('show');
+
+                    var isDash = collapseIconList[i].classList.contains('bi-dash');
+                    var iconHTML = collapseIconList[i].innerHTML;
+                    console.log(isDash);
+
+                    collapseIconList[i].innerHTML = isDash ? `
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                    </svg>` :
+                        `
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                    </svg>`;
+                    collapseIconList[i].classList.toggle('bi-dash');
+                    collapseIconList[i].classList.toggle('bi-plus-lg');
+
+
+                } else {
+                    collapseList[i].classList.remove('show');
+                    collapseIconList[i].classList.remove('bi-dash');
+                    collapseIconList[i].classList.add('bi-plus-lg');
+                    collapseIconList[i].innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                </svg>`;
+                }
+            }
+        }
+        function toggleVideo() {
+            var thumbnail = document.getElementById("videoThumbnail");
+            var videoFrame = document.getElementById("videoFrame");
+
+            if (thumbnail.style.display === "none") {
+                thumbnail.style.display = "block";
+                videoFrame.style.display = "none";
+                videoFrame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+
+
+            } else {
+                console.log(111);
+                thumbnail.style.display = "none";
+                videoFrame.style.display = "block";
+
+                videoFrame.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');;
+            }
+        }
+        // Get the modal element
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("openModalBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
     <script>
         const container = document.querySelector('.container-row');
         const items4 = document.querySelectorAll('.item-4-price');
@@ -1239,123 +1525,10 @@
 
         // Scroll the container to center the centerItem
         container.scrollLeft = centerItem.offsetLeft - (container.offsetWidth - centerItem.offsetWidth) / 2;
-
-
-
-
-        let items = document.querySelectorAll('.carousel .carousel-item')
-
-        items.forEach((el) => {
-            const minPerSlide = 3
-            let next = el.nextElementSibling
-            for (var i = 1; i < minPerSlide; i++) {
-                if (!next) {
-                    // wrap carousel by using first child
-                    next = items[0]
-                }
-                let cloneChild = next.cloneNode(true)
-                el.appendChild(cloneChild.children[0])
-                next = next.nextElementSibling
-            }
-        });
-
     </script>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-123"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-123"
-        crossorigin="anonymous"></script>
-    <script>
-        window.onload = function () {
-            var targetElement = document.getElementById('target');
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            } console.log(targetElement);
-        };
-
-        function goto(url, id) {
-            if (id === 2) {
-                window.open(
-                    url,
-                    '_blank'
-                );
-            } else {
-                window.location.href = url;
-            }
-
-        }
-
-        function toggleCollapse(targetId, button) {
-            let collapseList = document.querySelectorAll('.item-content-3-collapse .collapse-t');
-            let collapseIconList = document.querySelectorAll('.item-content-3-collapse .bi-chevron-down');
-
-            console.log(collapseList, collapseIconList);
-            for (let i = 0; i < collapseList.length; i++) {
-                collapseList[i].classList.toggle('show');
-                if (collapseList[i].id.includes(targetId)) {
-                    console.log(2)
-                    collapseList[i].classList.toggle('show');
-                    collapseIconList[i].classList.toggle('abc');
-                } else {
-                    console.log(1)
-                    collapseList[i].classList.remove('show');
-                    collapseIconList[i].classList.remove('abc');
-                }
-            }
-        }
-
-        function toggleCollapse2(targetId) {
-            // Get all collapse elements
-            var collapseList = document.querySelectorAll('.item-content-7-collapse .collapse7');
-            var collapseIconList = document.querySelectorAll('.item-content-7-collapse .icon-bi');
-
-            for (var i = 0; i < collapseList.length; i++) {
-                collapseList[i].classList.toggle('show');
-                // collapseList[i].classList.toggle('show');
-                if (collapseList[i].id === targetId) {
-                    collapseList[i].classList.toggle('show');
-                    collapseIconList[i].classList.toggle('bi-dash');
-                    collapseIconList[i].classList.toggle('bi-plus-lg');
-                    if (collapseIconList[i].classList.contains('bi-dash')) {
-                        collapseIconList[i].innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-                    </svg>`;
-                    } else {
-                        collapseIconList[i].innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
-                    </svg>`;
-                    }
-                } else {
-                    collapseList[i].classList.remove('show');
-                    collapseIconList[i].classList.remove('bi-dash');
-                    collapseIconList[i].classList.add('bi-plus-lg');
-                    collapseIconList[i].innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
-                </svg>`;
-                }
-            }
-        }
-        function toggleVideo() {
-            console.log(111);
-            var thumbnail = document.getElementById("videoThumbnail");
-            var videoFrame = document.getElementById("videoFrame");
-
-            if (thumbnail.style.display === "none") {
-                thumbnail.style.display = "block";
-                videoFrame.style.display = "none";
-                videoFrame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-
-
-            } else {
-                thumbnail.style.display = "none";
-                videoFrame.style.display = "block";
-            }
-        }
-    </script>
-
 </body>
+<noscript><img
+        src="https://countly.ansoft.com.vn/pixel.png?app_key=38411ce56827c1095de28e21e111f4b7fbec879f&begin_session=1"
+        width="auto" height="auto" /></noscript>
 
 </html>

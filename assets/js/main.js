@@ -18,8 +18,6 @@ jQuery(document).ready(function () {
         scroll[i] = jQuery(goscroll[i]).offset().top - srh + kc[i]; // Tính toán khi nào xuất hiện animation cho từng element class
         fistanima = goscroll[i].getAttribute("data-anitype"); // Lấy data-anitype của element mẹ
         child = goscroll[i].children; // Lấy những element con của element hiện tại đã cuộn tới
-        // console.log(goscroll[i].offsetTop);
-        // console.log(goscroll[i]);
         for (o = 0; o < child.length; o++) {
           if (fistanima != null) {
             anima = fistanima;

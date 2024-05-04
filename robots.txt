@@ -1,4 +1,10 @@
 User-agent: *
 Disallow: /admin/
 Disallow: /private/
+Disallow: /vi/tim-kiem/*
+Disallow: /en/search/*
+Disallow: /*?*page=
+Allow: /vi
+Allow: /en
 Allow: FSafe Go
+Sitemap: https://fpt.vn/sitemap.xml
