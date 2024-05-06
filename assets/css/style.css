@@ -229,9 +229,10 @@ header img {
   transform: rotate(180deg) !important;
   color: var(--Brand-Blue-Primary) !important;
 }
+
 .nav-link {
   color: var(--Icon-Text-Secondary);
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -242,7 +243,7 @@ header img {
   color: var(--Brand-Blue-Primary) !important;
 }
 .nav-item {
-  width: 130px;
+  width: 84px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -275,7 +276,7 @@ header img {
   border-bottom: 1px solid #e7e7e7;
 }
 li:last-child .dropdown-item {
-  border-bottom: none;
+  border-bottom: none !important;
 }
 .dropdown-item:hover {
   border-bottom: 1px solid #e7e7e7 !important;
@@ -388,6 +389,7 @@ h5 {
   font-weight: 400 !important;
   line-height: normal !important;
   padding-top: 32px !important;
+  padding-right: 32px !important;
   margin: 0 !important;
 }
 h6 {
@@ -762,6 +764,76 @@ h6 {
   right: -2px;
   border-radius: 0 16px 0 0;
 }
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+.abc {
+  transform: rotate(180deg); /* Xoay bi-chevron-down 180 độ */
+}
+.container-row {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+.item-4-price {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  scroll-snap-align: center;
+  position: relative;
+  display: flex;
+  padding: 48px 32px;
+  flex-direction: column;
+  border-radius: 24px;
+  border: 1.5px solid #e0e0e0;
+  background: #fff;
+  margin: 16px;
+  width: 30%;
+  min-width: 280px;
+}
+.item-content-4 .col-text-price {
+  display: flex;
+  width: 100%;
+  align-items: end;
+  padding: 40px 0;
+}
+.item-content-4 button {
+  display: flex;
+  height: 48px;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(180deg, #ff7521 0%, #ff4d00 100%);
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+}
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: none !important;
+  background-color: transparent !important;
+}
+.bi-plus-lg::before {
+  content: none !important;
+  display: none;
+}
+.bi-dash::before {
+  content: none !important;
+}
+.navbar {
+  margin: 0;
+}
 
 .play-image-video {
 }
@@ -789,18 +861,27 @@ h6 {
   header .logo-header {
     justify-content: start;
     width: 200%;
+    margin: 0 8px;
   }
   header .nav-header {
     display: none;
+  }
+  header .button-header button {
+    padding: 4px 10px;
+    width: 88px;
+    height: 32px;
   }
   .col-5 {
     width: 100%;
   }
   .col-6 {
     width: 100%;
+    padding: 0;
   }
   .col-7 {
     width: 100%;
+    margin-top: 8px;
+    padding: 0 4%;
   }
   .row {
     display: flex;
@@ -815,6 +896,12 @@ h6 {
     display: block;
   }
   .item-1-pc {
+    display: none;
+  }
+  .item-7-mobile {
+    display: block;
+  }
+  .item-7-pc {
     display: none;
   }
 }
@@ -833,6 +920,10 @@ h6 {
   header .nav-header {
     display: flex;
   }
+  header .button-header button {
+    padding: 8px 16px;
+    width: 100px;
+  }
   .row {
     display: flex;
     align-items: center;
@@ -846,8 +937,23 @@ h6 {
   .item-1-pc {
     display: block;
   }
+  .item-7-mobile {
+    display: none;
+  }
+  .item-7-pc {
+    display: block;
+  }
   .image-item-content-3 {
     width: 80%;
+  }
+  h1 {
+    font-size: 76px;
+  }
+  .content-text h2 {
+    font-size: 76px;
+  }
+  .item-content-2 .content-text h2 {
+    font-size: 48px;
   }
 }
 .carousel-item {
@@ -855,6 +961,10 @@ h6 {
 }
 
 @media (max-width: 767px) {
+  .body-content .item-content {
+    margin-bottom: 80px;
+    align-items: center;
+  }
   .carousel-inner .carousel-item > div {
     display: none !important;
   }
@@ -874,7 +984,7 @@ h6 {
     width: 100%;
   }
   .item-content-2 .content-text {
-    padding: 0 24px;
+    padding: 0;
   }
   .item-content-2-left,
   .item-content-2-right {
@@ -885,24 +995,34 @@ h6 {
     right: 0;
     width: 75%;
   }
+  .item-content-7,
+  .item-content-6,
+  .item-content-5,
+  .item-content-3,
+  .item-content-2,
+  .item-content-1 {
+    margin: 0 4%;
+  }
   .content-payment-4 {
     display: grid;
     align-items: center;
     justify-content: center;
   }
   .item-content-4 {
-    padding: 32px 24px !important;
+    padding: 32px 8px !important;
   }
 
   .container-row {
     justify-content: normal;
   }
   .item-4-price {
-    width: 100%;
+    margin: 16px 8px;
+    padding: 36px 24px;
+    min-width: 260px;
   }
 
   header {
-    padding: 0.75rem 4%;
+    padding: 1.75rem 4%;
     align-items: center;
   }
   .body-content {
@@ -918,6 +1038,23 @@ h6 {
   .item-content-8 {
     display: grid;
   }
+  h1 {
+    font-size: 56px;
+  }
+  .item-content-1 h2 {
+    font-size: 56px !important;
+  }
+  .content-text strong {
+    font-size: 56px;
+  }
+  .content-text h2 {
+    font-size: 40px;
+  }
+  .item-content-5 h2,
+  .item-content-7 h2,
+  .item-content-8 h2 {
+    font-size: 40px;
+  }
 }
 
 .carousel-inner .carousel-item.active,
@@ -928,6 +1065,10 @@ h6 {
 
 /* medium and up screens */
 @media (min-width: 768px) {
+  .body-content .item-content {
+    margin-bottom: 80px;
+    align-items: center;
+  }
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(100%);
@@ -1005,7 +1146,7 @@ h6 {
     width: 100%;
   }
   header {
-    padding: 0.75rem 4%;
+    padding: 0.75rem 8%;
   }
 }
 @media (min-width: 1300px) and (max-width: 1536px) {
@@ -1022,74 +1163,4 @@ h6 {
   header {
     padding: 0.75rem 6%;
   }
-}
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-  transform: translateX(0);
-}
-.abc {
-  transform: rotate(180deg); /* Xoay bi-chevron-down 180 độ */
-}
-.container-row {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
-}
-
-.item-4-price {
-  flex: 0 0 auto;
-  margin-right: 10px;
-  scroll-snap-align: center;
-  position: relative;
-  display: flex;
-  padding: 48px 32px;
-  flex-direction: column;
-  border-radius: 24px;
-  border: 1.5px solid #e0e0e0;
-  background: #fff;
-  margin: 16px;
-  width: 30%;
-  min-width: 280px;
-}
-.item-content-4 .col-text-price {
-  display: flex;
-  width: 100%;
-  align-items: end;
-  padding: 40px 0;
-}
-.item-content-4 button {
-  display: flex;
-  height: 48px;
-  padding: 10px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  border-radius: 24px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  background: linear-gradient(180deg, #ff7521 0%, #ff4d00 100%);
-  color: #fff;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  width: 100%;
-}
-a {
-  text-decoration: none !important;
-}
-a:hover {
-  text-decoration: none !important;
-  background-color: transparent !important;
-}
-.bi-plus-lg::before {
-  content: none !important;
-  display: none;
-}
-.bi-dash::before {
-  content: none !important;
-}
-.navbar {
-  margin: 0;
 }

@@ -98,7 +98,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" onclick="goto('/',1)">Trang chủ</a>
                             </li>
-                            <li class="nav-item dropdown" style="width:200px;">
+                            <li class="nav-item dropdown" style="width:164px;">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Tính năng nổi bật
@@ -107,10 +107,9 @@
                                     <li><a class="dropdown-item" onclick="goto('/page-detail-3.html',1)">Bảo vệ truy cập
                                             trên
                                             Browser</a></li>
-                                    <li><a class="dropdown-item" onclick="goto('/page-detail-2.html',1)">Ngăn nguy cơ lộ
-                                            dữ liệu cá
-                                            nhân</a></li>
-                                    <li><a class="dropdown-item" onclick="goto('/page-detail-4.html',1)">Chống theo dõi
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-4.html',1)">Cảnh báo lộ dữ
+                                            liệu</a></li>
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-2.html',1)">Chống theo dõi
                                             với VPN</a>
                                     </li>
                                     <li><a class="dropdown-item" onclick="goto('/page-detail-1.html',1)">Bảo vệ thiết
@@ -122,15 +121,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" onclick="goto('#item-content-4',1)">Bảng giá</a>
                             </li>
-                            <li class="nav-item dropdown" style="width:130px;">
+                            <li class="nav-item dropdown" style="width:96px;">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Hướng dẫn
+                                    Tìm hiểu
                                 </a>
                                 <ul class="dropdown-menu" style="border-radius: 12px;">
                                     <li><a class="dropdown-item" onclick="goto('#item-content-5',1)">Hướng dẫn đăng
                                             ký</a></li>
-                                    <li><a class="dropdown-item" onclick="goto('#item-content-6',1)">FAQs</a></li>
+                                    <li><a class="dropdown-item" onclick="goto('#item-content-6',1)">Đánh giá</a></li>
+                                    <li><a class="dropdown-item" onclick="goto('#item-content-7',1)">FAQs</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -158,88 +158,34 @@
     </header>
     <div id="myModal" class="modal">
         <div class="modal-content" style="width: 75%;">
-            <span class="close">&times;</span>
+            <span class="close"><img src="./assets/image/content/close-circle.png" alt="close-circle" width="auto"
+                    height="auto"></span>
             <div class="modal-body">
                 <a class="item-menu-modal" onclick="goto('/',1)">Trang chủ</a>
-                <a class="item-menu-modal toggle-feature" onclick="openToggle('toggle-feature')">Tính năng nỗi bật <div
-                        style="margin-left: 8px;"><svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="17" viewBox="0 0 16 17" fill="none">
-                            <path
-                                d="M11.9465 5.95312H7.79316H4.05317C3.41317 5.95312 3.09317 6.72646 3.5465 7.17979L6.99983 10.6331C7.55317 11.1865 8.45317 11.1865 9.0065 10.6331L10.3198 9.31979L12.4598 7.17979C12.9065 6.72646 12.5865 5.95312 11.9465 5.95312Z"
-                                fill="#3D3D3D" />
-                        </svg></div></a>
+                <a class="item-menu-modal toggle-feature" onclick="openToggle('toggle-feature')">Tính năng nỗi bật</a>
                 <div class="plus-feature">
                     <a class="item-menu-modal-plus" onclick="goto('/page-detail-3.html',1)">Bảo vệ truy cập trên Browser
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-2.html',1)">Ngăn nguy cơ lộ dữ liệu cá
-                        nhân
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-4.html',1)">Cảnh báo lộ dữ liệu
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-4.html',1)">Chống theo dõi với VPN
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-2.html',1)">Chống theo dõi với VPN
                     </a>
                     <a class="item-menu-modal-plus" onclick="goto('/page-detail-1.html',1)">Bảo vệ thiết bị
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
                     </a>
                     <a class="item-menu-modal-plus" onclick="goto('/page-detail-5.html',1)">Bảo vệ trẻ nhỏ
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
                     </a>
 
                 </div>
 
 
                 <a class="item-menu-modal" onclick="goto('#item-content-4',1)">Bảng giá</a>
-                <a class="item-menu-modal toggle-guide" onclick="openToggle('toggle-guide')">Hướng dẫn <div
-                        style="margin-left: 8px;">
-                        <svg class="icon-menu2" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                            viewBox="0 0 16 17" fill="none">
-                            <path
-                                d="M11.9465 5.95312H7.79316H4.05317C3.41317 5.95312 3.09317 6.72646 3.5465 7.17979L6.99983 10.6331C7.55317 11.1865 8.45317 11.1865 9.0065 10.6331L10.3198 9.31979L12.4598 7.17979C12.9065 6.72646 12.5865 5.95312 11.9465 5.95312Z"
-                                fill="#3D3D3D" />
-                        </svg>
-                    </div></a>
+                <a class="item-menu-modal toggle-guide" onclick="openToggle('toggle-guide')">Tìm hiểu </a>
                 <div class="plus-guide">
                     <a class="item-menu-modal-plus" onclick="goto('#item-content-5',1)">Hướng dẫn đăng ký
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('#item-content-6',1)">FAQs
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
+                    <a class="item-menu-modal-plus" onclick="goto('#item-content-6',1)">Đánh giá
+                    </a>
+                    <a class="item-menu-modal-plus" onclick="goto('#item-content-7',1)">FAQs
                     </a>
                 </div>
                 <a class="item-menu-modal"
@@ -289,10 +235,10 @@
             <div class="row ">
                 <div class="col-12 ">
                     <div class="content-text">
-                        <h2 style="font-size: 48px;">Không còn lo lắng khi lướt Internet</h2>
+                        <h2>Không còn lo lắng khi lướt Internet</h2>
                         <h5>
                             Cuộc sống ngày càng gắn liền với Internet và mở ra nhiều rủi ro trên không gian mạng. Từng
-                            điểm chạm, từng khoảnh khắc khi trực tuyến của bạn nay sẽ được bảo vệ bởi F-Safe Go
+                            điểm chạm, từng khoảnh khắc khi trực tuyến của bạn nay sẽ được bảo vệ bởi F-Safe Go.
                         </h5>
                     </div>
                 </div>
@@ -442,7 +388,7 @@
                                     <path fill-rule="evenodd"
                                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                                 </svg>
-                                <h3 style="margin-left: 8px;">Khiểm soát trẻ em</h3>
+                                <h3 style="margin-left: 8px;">Kiểm soát trẻ em</h3>
                             </a>
                         </div>
 
@@ -511,10 +457,9 @@
                             </svg>
                         </a>
                         <div class="collapse collapse-t " id="collapseExample3">
-                            <h5 style="padding-top: 8px !important">Với nhóm tính năng đảm bảo an toàn, thiết bị của bạn
-                                sẽ được bảo vệ khỏi virus, mã độc;
-                                đặc biệt, bạn có thể giúp con trẻ tránh xa các nội dung độc hại hay sử dụng Internet
-                                nhiều quá mức.</h5>
+                            <h5 style="padding-top: 8px !important">Với nhóm tính năng bảo vệ danh tính, bạn sẽ được hỗ
+                                trợ tạo mật khẩu mạnh & duy nhất, lưu trữ an toàn trong ví mật khẩu để đảm bảo an toàn
+                                cho các tài khoản trực tuyến; dễ dàng giám sát online việc lọt lộ danh tính.</h5>
 
                             <a class="arrow-i3" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -531,6 +476,15 @@
                                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                                 </svg>
                                 <h3 style="margin-left: 8px;">Quản lý mật khẩu</h3>
+                            </a>
+
+                            <a class="arrow-i3" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg>
+                                <h3 style="margin-left: 8px;">Nhận cảnh báo khi bị lọt lộ danh tính</h3>
                             </a>
                         </div>
 
@@ -798,6 +752,13 @@
         <div style="height:80px;" id="item-content-7"></div>
         <div class="item-content item-content-7">
             <div class="row" style="align-items: start;">
+                <div class="col-6 text-center item-7-mobile  goscroll" data-anitype="animate__fadeInRight">
+                    <a>
+                        <img id="i7" src="./assets/image/content/i7-v2.png" alt="image-item-content-7" width="auto"
+                            height="auto" class="image-item-content-7" style="width: 70%;">
+
+                    </a>
+                </div>
                 <div class="col-6 text-start goscroll" data-anitype="animate__fadeInLeft">
                     <h2>Những câu hỏi thường gặp?</h2>
                     <div class="item-content-7-collapse">
@@ -864,10 +825,14 @@
                             </div>
                         </a>
                         <div class="collapse collapse7" id="collapseExample7-3">
-                            <h5 style=" padding-top: 8px !important;">Gia hạn gói F-Safe Go tại đây. Hoặc gia hạn trực
+                            <h5 style=" padding-top: 8px !important;">Gia hạn gói F-Safe Go
+                                <a href="https://shop.fpt.vn/fsafe-go/extend"
+                                    style="margin-left: 4px;">https://shop.fpt.vn/fsafe-go/extend</a>. Hoặc gia hạn
+                                trực
                                 tiếp trên ứng dụng F-Safe Go (Chọn
                                 profile, sau đó chọn Giới thiệu và trợ giúp, chọn Gia hạn). Đăng ký của bạn được gia hạn
-                                dựa trên đăng ký ban đầu của bạn (thời hạn cấp phép và số lượng thiết bị)</h5>
+                                dựa trên đăng ký ban đầu của bạn (thời hạn cấp phép và số lượng thiết bị)
+                            </h5>
                         </div>
 
                     </div>
@@ -895,7 +860,7 @@
 
                     </div>
                 </div>
-                <div class="col-6 text-center  goscroll" data-anitype="animate__fadeInRight">
+                <div class="col-6 text-center item-7-pc goscroll" data-anitype="animate__fadeInRight">
                     <a>
                         <img id="i7" src="./assets/image/content/i7-v2.png" alt="image-item-content-7" width="auto"
                             height="auto" class="image-item-content-7" style="width: 70%;">
@@ -1362,29 +1327,32 @@
 
     <script>
         const toggleFeatureLink = document.querySelector('.toggle-feature');
+        const toggleguideLink = document.querySelector('.toggle-guide');
         const plusFeatureElement = document.querySelector('.plus-feature');
         const plusGuideElement = document.querySelector('.plus-guide');
         const iconlement = document.querySelector('.icon-menu');
-        const iconlement2 = document.querySelector('.icon-menu2');
+        const iconlement2 = document.querySelector('.toggle-feature');
         plusGuideElement.style.display = 'none';
         plusFeatureElement.style.display = 'none';
         function openToggle(str) {
 
             if (str === 'toggle-feature') {
                 if (plusFeatureElement.style.display == 'none') {
+                    toggleFeatureLink.classList.toggle("rotate");
                     plusFeatureElement.style.display = 'block';
                     iconlement.style.transform = 'rotate(270deg)';
                 } else {
+                    toggleFeatureLink.classList.remove("rotate");
                     plusFeatureElement.style.display = 'none';
                     iconlement.style.transform = 'rotate(0)';
                 }
             } else {
                 if (plusGuideElement.style.display === 'none') {
                     plusGuideElement.style.display = 'block';
-                    iconlement2.style.transform = 'rotate(270deg)';
+                    toggleguideLink.classList.toggle("rotate");
                 } else {
                     plusGuideElement.style.display = 'none';
-                    iconlement2.style.transform = 'rotate(0)';
+                    toggleguideLink.classList.remove("rotate");
                 }
             }
 

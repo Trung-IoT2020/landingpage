@@ -99,10 +99,9 @@
                                     <li><a class="dropdown-item" onclick="goto('/page-detail-3.html',1)">Bảo vệ truy cập
                                             trên
                                             Browser</a></li>
-                                    <li><a class="dropdown-item" onclick="goto('/page-detail-2.html',1)">Ngăn nguy cơ lộ
-                                            dữ liệu cá
-                                            nhân</a></li>
-                                    <li><a class="dropdown-item" onclick="goto('/page-detail-4.html',1)">Chống theo dõi
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-4.html',1)">Cảnh báo lộ dữ
+                                            liệu</a></li>
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-2.html',1)">Chống theo dõi
                                             với VPN</a>
                                     </li>
                                     <li><a class="dropdown-item" onclick="goto('/page-detail-1.html',1)">Bảo vệ thiết
@@ -117,12 +116,14 @@
                             <li class="nav-item dropdown" style="width:130px;">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Hướng dẫn
+                                    Tìm hiểu
                                 </a>
                                 <ul class="dropdown-menu" style="border-radius: 12px;">
                                     <li><a class="dropdown-item" onclick="goto('/#item-content-5',1)">Hướng
                                             dẫn đăng ký</a></li>
-                                    <li><a class="dropdown-item" onclick="goto('/#item-content-6',1)">FAQs</a>
+                                    <li><a class="dropdown-item" onclick="goto('/#item-content-6',1)">Đánh giá</a>
+                                    </li>
+                                    <li><a class="dropdown-item" onclick="goto('/#item-content-7',1)">FAQs</a>
                                     </li>
                                 </ul>
                             </li>
@@ -151,18 +152,13 @@
     </header>
     <div id="myModal" class="modal">
         <div class="modal-content" style="width: 75%;">
-            <span class="close">&times;</span>
+            <span class="close"><img src="./assets/image/content/close-circle.png" alt="close-circle" width="auto"
+                    height="auto"></span>
             <div class="modal-body">
                 <a class="item-menu-modal" onclick="goto('/',1)">Trang chủ</a>
-                <a class="item-menu-modal toggle-feature" onclick="openToggle('toggle-feature')">Tính năng nỗi bật <div
-                        style="margin-left: 8px;"><svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="17" viewBox="0 0 16 17" fill="none">
-                            <path
-                                d="M11.9465 5.95312H7.79316H4.05317C3.41317 5.95312 3.09317 6.72646 3.5465 7.17979L6.99983 10.6331C7.55317 11.1865 8.45317 11.1865 9.0065 10.6331L10.3198 9.31979L12.4598 7.17979C12.9065 6.72646 12.5865 5.95312 11.9465 5.95312Z"
-                                fill="#3D3D3D" />
-                        </svg></div></a>
+                <a class="item-menu-modal toggle-feature" onclick="openToggle('toggle-feature')">Tính năng nỗi bật </a>
                 <div class="plus-feature">
-                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-1.html',1)">Bảo vệ truy cập trên Browser
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-3.html',1)">Bảo vệ truy cập trên Browser
                         <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
                                 width="16" height="17" viewBox="0 0 16 17" fill="none">
                                 <path
@@ -170,8 +166,7 @@
                                     fill="#3D3D3D" />
                             </svg></div>
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-2.html',1)">Ngăn nguy cơ lộ dữ liệu cá
-                        nhân
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-4.html',1)">Cảnh báo lộ dữ liệu
                         <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
                                 width="16" height="17" viewBox="0 0 16 17" fill="none">
                                 <path
@@ -179,7 +174,7 @@
                                     fill="#3D3D3D" />
                             </svg></div>
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-3.html',1)">Chống theo dõi với VPN
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-2.html',1)">Chống theo dõi với VPN
                         <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
                                 width="16" height="17" viewBox="0 0 16 17" fill="none">
                                 <path
@@ -187,7 +182,7 @@
                                     fill="#3D3D3D" />
                             </svg></div>
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-4.html',1)">Bảo vệ thiết bị
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-1.html',1)">Bảo vệ thiết bị
                         <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
                                 width="16" height="17" viewBox="0 0 16 17" fill="none">
                                 <path
@@ -207,16 +202,9 @@
                 </div>
 
 
+
                 <a class="item-menu-modal" onclick="goto('#item-content-4',1)">Bảng giá</a>
-                <a class="item-menu-modal toggle-guide" onclick="openToggle('toggle-guide')">Hướng dẫn <div
-                        style="margin-left: 8px;">
-                        <svg class="icon-menu2" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                            viewBox="0 0 16 17" fill="none">
-                            <path
-                                d="M11.9465 5.95312H7.79316H4.05317C3.41317 5.95312 3.09317 6.72646 3.5465 7.17979L6.99983 10.6331C7.55317 11.1865 8.45317 11.1865 9.0065 10.6331L10.3198 9.31979L12.4598 7.17979C12.9065 6.72646 12.5865 5.95312 11.9465 5.95312Z"
-                                fill="#3D3D3D" />
-                        </svg>
-                    </div></a>
+                <a class="item-menu-modal toggle-guide" onclick="openToggle('toggle-guide')">Tìm hiểu</a>
                 <div class="plus-guide">
                     <a class="item-menu-modal-plus" onclick="goto('/#item-content-5',1)">Hướng dẫn đăng ký
                         <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +214,15 @@
                                     fill="#3D3D3D" />
                             </svg></div>
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('/#item-content-6',1)">FAQs
+                    <a class="item-menu-modal-plus" onclick="goto('/#item-content-6',1)">Đánh giá
+                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path
+                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
+                                    fill="#3D3D3D" />
+                            </svg></div>
+                    </a>
+                    <a class="item-menu-modal-plus" onclick="goto('/#item-content-7',1)">FAQs
                         <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
                                 width="16" height="17" viewBox="0 0 16 17" fill="none">
                                 <path
@@ -286,14 +282,14 @@
                 </svg>
                 <h3>Mạng riêng ảo VPN</h3>
                 <p>VPN giúp truy cập Internet ẩn danh, ẩn địa chỉ IP và mã hóa dữ liệu truy cập Internet, đảm bảo an
-                    toàn và quyền riêng tư của Người dùng. VPN giúp thêm 1 lớp bảo vệ tiền trong tài khoản ngân hàng của
-                    bạn</p>
+                    toàn và quyền riêng tư của người dùng. VPN giúp thêm 1 lớp bảo vệ tiền trong tài khoản ngân hàng của
+                    bạn.</p>
             </div>
 
         </div>
     </div>
     <div class="body-content-page-detail">
-        <div style="height: 160px;" id="item-1"></div>
+        <div class="item-page-margin" id="item-1"></div>
         <div class="page-content item-2 goscroll" data-anitype="animate__fadeIn">
             <div class='row' style="align-items: start;">
                 <div class="col-6">

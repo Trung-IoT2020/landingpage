@@ -99,10 +99,9 @@
                                     <li><a class="dropdown-item" onclick="goto('/page-detail-3.html',1)">Bảo vệ truy cập
                                             trên
                                             Browser</a></li>
-                                    <li><a class="dropdown-item" onclick="goto('/page-detail-2.html',1)">Ngăn nguy cơ lộ
-                                            dữ liệu cá
-                                            nhân</a></li>
-                                    <li><a class="dropdown-item" onclick="goto('/page-detail-4.html',1)">Chống theo dõi
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-4.html',1)">Cảnh báo lộ dữ
+                                            liệu</a></li>
+                                    <li><a class="dropdown-item" onclick="goto('/page-detail-2.html',1)">Chống theo dõi
                                             với VPN</a>
                                     </li>
                                     <li><a class="dropdown-item" onclick="goto('/page-detail-1.html',1)">Bảo vệ thiết
@@ -117,12 +116,14 @@
                             <li class="nav-item dropdown" style="width:130px;">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Hướng dẫn
+                                    Tìm hiểu
                                 </a>
                                 <ul class="dropdown-menu" style="border-radius: 12px;">
                                     <li><a class="dropdown-item" onclick="goto('/#item-content-5',1)">Hướng
                                             dẫn đăng ký</a></li>
-                                    <li><a class="dropdown-item" onclick="goto('/#item-content-6',1)">FAQs</a>
+                                    <li><a class="dropdown-item" onclick="goto('/#item-content-6',1)">Đánh giá</a>
+                                    </li>
+                                    <li><a class="dropdown-item" onclick="goto('/#item-content-7',1)">FAQs</a>
                                     </li>
                                 </ul>
                             </li>
@@ -151,88 +152,41 @@
     </header>
     <div id="myModal" class="modal">
         <div class="modal-content" style="width: 75%;">
-            <span class="close">&times;</span>
+            <span class="close"><img src="./assets/image/content/close-circle.png" alt="close-circle" width="auto"
+                    height="auto"></span>
             <div class="modal-body">
                 <a class="item-menu-modal" onclick="goto('/',1)">Trang chủ</a>
-                <a class="item-menu-modal toggle-feature" onclick="openToggle('toggle-feature')">Tính năng nỗi bật <div
-                        style="margin-left: 8px;"><svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="17" viewBox="0 0 16 17" fill="none">
-                            <path
-                                d="M11.9465 5.95312H7.79316H4.05317C3.41317 5.95312 3.09317 6.72646 3.5465 7.17979L6.99983 10.6331C7.55317 11.1865 8.45317 11.1865 9.0065 10.6331L10.3198 9.31979L12.4598 7.17979C12.9065 6.72646 12.5865 5.95312 11.9465 5.95312Z"
-                                fill="#3D3D3D" />
-                        </svg></div></a>
+                <a class="item-menu-modal toggle-feature" onclick="openToggle('toggle-feature')">Tính năng nỗi bật</a>
                 <div class="plus-feature">
-                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-1.html',1)">Bảo vệ truy cập trên Browser
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-3.html',1)">Bảo vệ truy cập trên Browser
+
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-2.html',1)">Ngăn nguy cơ lộ dữ liệu cá
-                        nhân
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-4.html',1)">Cảnh báo lộ dữ liệu
+
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-3.html',1)">Chống theo dõi với VPN
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-2.html',1)">Chống theo dõi với VPN
+
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-4.html',1)">Bảo vệ thiết bị
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
+                    <a class="item-menu-modal-plus" onclick="goto('/page-detail-1.html',1)">Bảo vệ thiết bị
+
                     </a>
                     <a class="item-menu-modal-plus" onclick="goto('/page-detail-5.html',1)">Bảo vệ trẻ nhỏ
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
+
                     </a>
 
                 </div>
 
-
                 <a class="item-menu-modal" onclick="goto('#item-content-4',1)">Bảng giá</a>
-                <a class="item-menu-modal toggle-guide" onclick="openToggle('toggle-guide')">Hướng dẫn <div
-                        style="margin-left: 8px;">
-                        <svg class="icon-menu2" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                            viewBox="0 0 16 17" fill="none">
-                            <path
-                                d="M11.9465 5.95312H7.79316H4.05317C3.41317 5.95312 3.09317 6.72646 3.5465 7.17979L6.99983 10.6331C7.55317 11.1865 8.45317 11.1865 9.0065 10.6331L10.3198 9.31979L12.4598 7.17979C12.9065 6.72646 12.5865 5.95312 11.9465 5.95312Z"
-                                fill="#3D3D3D" />
-                        </svg>
-                    </div></a>
+                <a class="item-menu-modal toggle-guide" onclick="openToggle('toggle-guide')">Tìm hiểu</a>
                 <div class="plus-guide">
                     <a class="item-menu-modal-plus" onclick="goto('/#item-content-5',1)">Hướng dẫn đăng ký
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
+
                     </a>
-                    <a class="item-menu-modal-plus" onclick="goto('/#item-content-6',1)">FAQs
-                        <div style="margin-left: 8px;" class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <path
-                                    d="M5.45312 4.5535L5.45312 8.70684L5.45312 12.4468C5.45312 13.0868 6.22646 13.4068 6.67979 12.9535L10.1331 9.50017C10.6865 8.94683 10.6865 8.04683 10.1331 7.4935L8.81979 6.18017L6.67979 4.04017C6.22646 3.5935 5.45312 3.9135 5.45312 4.5535Z"
-                                    fill="#3D3D3D" />
-                            </svg></div>
+                    <a class="item-menu-modal-plus" onclick="goto('/#item-content-6',1)">Đánh giá
+
+                    </a>
+                    <a class="item-menu-modal-plus" onclick="goto('/#item-content-7',1)">FAQs
+
                     </a>
                 </div>
                 <a class="item-menu-modal"
@@ -270,7 +224,7 @@
                 </svg>
                 <h3>Bảo vệ giao dịch ngân hàng trực tuyến</h3>
                 <p>F-Safe Go sẽ thông báo khi người dùng truy cập vào trang Web của Ngân hàng chính thống đã được xác
-                    nhận và thực hiện bảo vệ các truy cập trang web của Ngân hàng cũng như các lệnh truyển tiền được an
+                    nhận và thực hiện bảo vệ các truy cập trang web của Ngân hàng cũng như các lệnh chuyển tiền được an
                     toàn. Duy trì truy cập duy nhất từ thiết bị tới trang web của Ngân hàng mà không bị kẻ xấu lấy cắp
                     thông tin.</p>
             </div>
@@ -281,7 +235,7 @@
                         fill="#931BEE" />
                 </svg>
                 <h3>Chặn quảng cáo</h3>
-                <p>F-Safe Go thực hiện chặn cácbanner quảng cáo không mong muốn để mang lại trải nghiệm lướt Web tốt
+                <p>F-Safe Go thực hiện chặn các banner quảng cáo không mong muốn để mang lại trải nghiệm lướt Web tốt
                     nhất cho người dùng.</p>
             </div>
             <div class="col-6">
@@ -367,7 +321,7 @@
         </div>
     </div>
     <div class="body-content-page-detail">
-        <div style="height: 160px;" id="item-1"></div>
+        <div class="item-page-margin" id="item-1"></div>
         <div class="page-content item-2 goscroll" data-anitype="animate__fadeInUp">
             <div class='row' style="align-items: start;">
                 <div class="col-6">
@@ -385,7 +339,7 @@
                             đoạt tài khoản của người dùng (như các tài khoản mạng xã hội, tài khoản Game, tài khoản Ngân
                             hàng…)</li>
                         <li>F-Safe Go Browser Extension giúp chặn các trang web lừa đảo, giả mạo, trang chứa mã độc để
-                            giúp người dùng truy cậpInternet và giao dịch trực tuyến thoải mái mà không còn lo lắng.
+                            giúp người dùng truy cập Internet và giao dịch trực tuyến thoải mái mà không còn lo lắng.
                         </li>
                     </ul>
                 </div>
