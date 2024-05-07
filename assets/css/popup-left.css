@@ -1,5 +1,4 @@
-/* The Modal (background) */
-.modal {
+#landingpage-fsafe-go .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -9,15 +8,13 @@
   height: 100%;
   z-index: 1050;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
-/* Modal Content */
-.modal-content {
+#landingpage-fsafe-go .modal-content {
   animation: moveLeftToRight0 0.5s forwards;
   position: absolute;
   background-color: #fefefe;
@@ -32,25 +29,21 @@
   box-shadow: none;
   max-width: 308px;
 }
-
-/* Modal Header */
-.modal-header {
+#landingpage-fsafe-go .modal-header {
   padding: 10px 16px;
   background-color: #f7f7f7;
 }
-
-/* Modal Body */
-.modal-body {
+#landingpage-fsafe-go .modal-body {
   padding: 16px;
   height: 85vh;
   overflow-y: auto;
   overflow-x: hidden;
 }
-.item-menu-modal svg,
-.item-menu-modal-plus svg {
+#landingpage-fsafe-go .item-menu-modal svg,
+#landingpage-fsafe-go .item-menu-modal-plus svg {
   margin: 0;
 }
-.item-menu-modal {
+#landingpage-fsafe-go .item-menu-modal {
   width: 100%;
   color: #3d3d3d;
   font-size: 16px;
@@ -60,16 +53,16 @@
   display: flex;
   padding: 16px 0;
 }
-.item-menu-modal:active {
+#landingpage-fsafe-go .item-menu-modal:active {
   border-bottom: 1px solid #e7e7e7;
   color: var(--Brand-Blue-Primary) !important;
 }
-a:focus,
-a:hover {
+#landingpage-fsafe-go a:focus,
+#landingpage-fsafe-go a:hover {
   color: var(--Brand-Blue-Primary) !important;
   border: none !important;
 }
-.item-menu-modal-plus {
+#landingpage-fsafe-go .item-menu-modal-plus {
   width: 100%;
   color: #3d3d3d;
   font-size: 16px;
@@ -82,17 +75,17 @@ a:hover {
   border-bottom: 1px solid #e7e7e7;
   position: relative;
 }
-.item-menu-modal-plus:last-child {
+#landingpage-fsafe-go .item-menu-modal-plus:last-child {
   border-bottom: none;
 }
-.plus-feature,
-.plus-guide {
+#landingpage-fsafe-go .plus-feature,
+#landingpage-fsafe-go .plus-guide {
   padding: 0 16px;
   display: none;
 }
-.toggle-feature::after,
-.toggle-guide::after,
-.item-menu-modal-plus::after {
+#landingpage-fsafe-go .toggle-feature::after,
+#landingpage-fsafe-go .toggle-guide::after,
+#landingpage-fsafe-go .item-menu-modal-plus::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -105,22 +98,19 @@ a:hover {
   transform: rotate(270deg);
   position: relative;
 }
-.item-menu-modal-plus::after {
+#landingpage-fsafe-go .item-menu-modal-plus::after {
   position: absolute;
-  right: -5px;
+  right: -15px;
   top: 50%;
 }
-.rotate::after {
+#landingpage-fsafe-go .rotate::after {
   transform: rotate(0deg) !important;
 }
-/* Modal Footer */
-.modal-footer {
+#landingpage-fsafe-go .modal-footer {
   padding: 10px 16px;
   background-color: #f7f7f7;
 }
-
-/* Close Button */
-.close {
+#landingpage-fsafe-go .close {
   position: absolute;
 
   right: -60px;
@@ -134,13 +124,12 @@ a:hover {
   text-align: center;
   justify-content: center;
 }
-
-.close:hover,
-.close:focus {
+#landingpage-fsafe-go .close:hover,
+#landingpage-fsafe-go .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-* {
+#landingpage-fsafe-go * {
   font-family: "interFont", sans-serif;
 }

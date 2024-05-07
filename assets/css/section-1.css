@@ -1,12 +1,12 @@
-#section-1 {
+#landingpage-fsafe-go #section-1 {
   padding: 100px 0;
 }
-#section-1 .section-wrapper {
+#landingpage-fsafe-go #section-1 .section-wrapper {
   border-radius: 24px;
   background: #fff;
   padding: 32px;
 }
-#section-1 .section-wrapper .section-title {
+#landingpage-fsafe-go #section-1 .section-wrapper .section-title {
   color: #333;
   font-family: "Manrope", sans-serif;
   font-size: 32px;
@@ -15,7 +15,7 @@
   line-height: normal;
   margin-bottom: 24px;
 }
-#section-1 .section-wrapper .number-wrapper {
+#landingpage-fsafe-go #section-1 .section-wrapper .number-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
